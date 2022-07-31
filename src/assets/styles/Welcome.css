@@ -5,14 +5,128 @@
   overflow: hidden;
   box-sizing: border-box;
   background-color: rgb(27, 38, 44);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.welcomeBackground img {
+.backgroundImage {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100vw;
   height: 100%;
   box-sizing: border-box;
-
   z-index: 10;
+}
+.containerTitle-logo{
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  
+}
+.welcome{
+  color: #fff;
+  font-size: 30px;
+  margin: 0;
+}
+.logoPeronio{
+  width: 45%;
+  margin-top: 16px;
+
+} 
+.welcomeSun{
+  position: absolute;
+  bottom: 10px;
+  width: 30%;
+}
+.welcomeContainer{
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+
+}
+.welcomeContainerImage {
+  width: 60%;
+
+
+}
+.welcomeImageSpikes{
+  position: absolute;
+  width: 50%;
+  height: 68%;
+  z-index: 110;
+  top:18px;
+}
+.container-text{
+  position: absolute;
+  margin-top: 19px;
+  line-height: 19px;
+
+
+}
+.welcomeContainerText{
+margin: 0;
+color: #fff;
+text-align: center;
+font-size: 15px;
+
+}
+.welcomeCircle{
+  position: absolute;
+  width: 70%;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+
+}
+.welcomeContainerTime{
+  color: #fff;
+  font-size: 49px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcomeContainerTextS{
+color: #FDCC9F;
+text-align: center;
+font-size: 13px;
+line-height: 5px;
+
+} 
+.welcomeContainerTextWallet{
+  color: #FFFFFF;
+font-size: 13px;
+font-weight: bold;
+}
+
+.welcomeContenButtons{
+  position: absolute;
+  width: 55%;
+  height: 21%;
+  bottom: 10px;
+  padding: 3px;
+  padding-right: 30px;
+  z-index: 110;
+}
+.welcomeButtons{
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  bottom: 6px;
+  z-index: 110;
+}
+.welcomePeople{
+  position: absolute;
+  bottom: -10px;
+  width: 20%;
+  z-index: 110;
+  margin-right: 30px;
 }

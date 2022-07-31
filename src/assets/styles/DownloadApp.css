@@ -1,0 +1,121 @@
+.DownloadAppBackgorund{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.DownloadAppFondo{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    z-index: 99;
+}
+/* .contentLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+.LogoPeronioWhite{
+    position: absolute;
+    z-index: 100;
+    width: 10%;
+    left: 285px;
+    top: 20px;
+}
+
+.DownloadReloj{
+    position: absolute;
+    z-index: 100;
+    right: 280px;
+    top: 13px;
+    width: 8%;
+
+}
+.DownloadContent{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.DownloadBarcode{
+    width: 50%;
+}
+
+
+
+.downloadButton{
+    width: 50%;
+}
+
+
+
+.contentBarra{
+    position: absolute;
+    z-index: 100;
+    bottom: 40px;
+    background-color: #ED3432;
+    height: 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+.ContentInnerBara{
+    position: absolute;
+    z-index: 110;
+    height: 15px;
+    width: 35%;
+    background-color: #1B262C;
+    border-radius: 10px;
+
+
+}
+
+.circleOfBarra{
+    position: absolute;
+    z-index: 120;
+    height: 15px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    
+}
+.downloadCircleBlack{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #1B262C;
+    border: 2px solid #F0DD0E;
+}
+
+.downloadCircle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F0DD0E;
+}
+
+.downloadText{
+    color: #FCF7F2;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 26px;
+}
+
+.downloadCar2 {
+    position: absolute;
+    z-index: 160;
+    bottom: 3px;
+    left: -180px;
+    width: 50%;
+}
