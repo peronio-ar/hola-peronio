@@ -1,0 +1,64 @@
+.createWalletBackground{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CreateWalletFondo{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+}
+.createWalletTime{
+    position: absolute;
+    z-index: 99;
+    left: 270px;
+    top: 30px;
+    width: 10%;
+}
+.createWalletBarra{
+    position: absolute;
+    z-index: 99;
+    width: 13%;
+    right: 290px;
+    top: 70px;
+}
+
+.contentButton{
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+}
+.contentButtonText{
+    color: #ffff;
+    font-size: 15px;
+    position: absolute;
+    top: -10px;
+}
+.createWalletCartel{
+    width: 60%;
+    
+    }
+
+    .createWalletBUTTONS{
+        width: 66%;
+        position: absolute;
+        top: 33px;
+    }
+
+
+
+.createWalletButton{
+    position: absolute;
+    z-index: 99;
+    width: 10%;
+}

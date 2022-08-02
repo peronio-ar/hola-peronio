@@ -1,5 +1,6 @@
 @import url("./assets/styles/Welcome.css");
 @import url("./assets/styles/DownloadApp.css");
+@import url("./assets/styles/createWallet.css");
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
