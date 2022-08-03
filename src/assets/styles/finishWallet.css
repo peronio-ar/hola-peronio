@@ -1,0 +1,67 @@
+.finishWalletBackground{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FinishWalletFondo{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+}
+.finishWalletContent{
+    position: absolute;
+    z-index:119;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.finishWalletContentText{
+    position: absolute;
+    z-index: 120;
+    bottom: 80px;
+     font-size: 40px;
+    color: #00B7C2;
+}
+
+.finishWalletContentTitle{
+    position: absolute;
+    z-index: 120;
+     font-size: 20px;
+    color: #00B7C2;
+    top: 50px;
+}
+
+.FinisWalletInnerBara{
+    position: absolute;
+    z-index: 110;
+    height: 15px;
+    width: 100%;
+    background-color: #1B262C;
+    border-radius: 10px;
+}
+.FinishWalletCircleBlack{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #1B262C;
+    border: 2px solid #F0DD0E;
+}
+.finishWalletFooterText{
+    color: #00B7C2;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    margin-left: 25px;
+    margin-top: 26px;
+}

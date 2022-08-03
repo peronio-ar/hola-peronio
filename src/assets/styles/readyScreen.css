@@ -1,0 +1,51 @@
+.readyScreenFondo{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.readyScreenFondo{
+}
+
+.readyScreenBarraVertical{
+    position: absolute;
+    z-index: 99;
+    width: 13%;
+    right: 290px;
+    top: 70px;
+}
+
+.finishScreenContent{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.finishContentText{
+    color: #39B54A;
+    font-size: 25px;
+    margin: 0;
+    line-height: 30px;
+
+
+}
+.readyScreenButton{
+    width: 25%;
+    margin: 0;
+}
+.finishScreenContentParrafo{
+    margin: 0;
+    line-height: 10px;
+    color: #1B262C;
+}

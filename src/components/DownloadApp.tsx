@@ -24,7 +24,7 @@ export default function DownloadApp() {
 
                 <div className='circleOfBarra'>
 
-                    <div className='downloadCircleBlack'>.</div>
+                    <div className='FinishWalletCircleBlack'>.</div>
                     {/*  <div className='downloadCircle'> */}<img src={downloadIcon} alt="downloadIcon" />{/* </div> */}
                     {/*  <div className='downloadCircle'> */}<img src={downloadIcon} alt="downloadIcon" />{/* </div> */}
                     {/* <div className='downloadCircle'> */}<img src={downloadIcon} alt="downloadIcon" />{/* </div> */}
