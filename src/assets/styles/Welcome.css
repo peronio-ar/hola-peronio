@@ -2,6 +2,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  min-height: 600px;
   overflow: hidden;
   box-sizing: border-box;
   background-color: rgb(27, 38, 44);
@@ -10,6 +11,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .backgroundImage {
   position: absolute;
   top: 0px;
@@ -19,7 +21,7 @@
   box-sizing: border-box;
   z-index: 10;
 }
-.containerTitle-logo{
+.containerTitle-logo {
   position: absolute;
   z-index: 100;
   top: 10px;
@@ -29,104 +31,141 @@
   justify-content: center;
   align-items: center;
   padding: 15px;
-  
 }
-.welcome{
+.welcome {
   color: #fff;
-  font-size: 30px;
+  font-size: 35px;
   margin: 0;
+  font-family: "Abril Fatface", cursive;
 }
-.logoPeronio{
+.logoPeronio {
   width: 45%;
   margin-top: 16px;
-
-} 
-.welcomeSun{
-  position: absolute;
-  bottom: 10px;
-  width: 30%;
 }
-.welcomeContainer{
+.welcomeSun {
+  position: absolute;
+  bottom: 0px;
+  width: 30%;
+  margin-right: 50px;
+  width: 300px;
+}
+.welcomeContainer {
   position: relative;
   z-index: 99;
   display: flex;
   justify-content: center;
-
+  max-width: 450px;
 }
 .welcomeContainerImage {
-  width: 60%;
-
-
+  width: 100%;
 }
-.welcomeImageSpikes{
+
+.welcomeButtonAction {
   position: absolute;
+
+  z-index: 300;
+  width: 380px;
+  padding-top: 250px;
+  margin: auto;
+}
+.welcomeButtonAction button {
+  background: transparent;
+  height: 50px;
   width: 50%;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border: none;
+}
+
+.welcomeButtonAction button:focus {
+  outline: none;
+}
+/* @media screen and (max-width: 660px) {
+  .welcomeContainerImage {
+    border: 1px solid red;
+    width: 90%;
+    max-width: 600px;
+  }
+} */
+.welcomeImageSpikes {
+  position: absolute;
+  width: 80%;
   height: 68%;
   z-index: 110;
-  top:18px;
+  top: 18px;
 }
-.container-text{
+.container-text {
   position: absolute;
   margin-top: 19px;
   line-height: 19px;
-
-
 }
-.welcomeContainerText{
-margin: 0;
-color: #fff;
-text-align: center;
-font-size: 15px;
-
+.welcomeContainerText {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Abril Fatface", cursive;
 }
-.welcomeCircle{
+.welcomeCircle {
   position: absolute;
   width: 70%;
   margin: 0 auto;
   right: 0;
   left: 0;
-
 }
-.welcomeContainerTime{
+.welcomeContainerTime {
   color: #fff;
-  font-size: 49px;
+  font-size: 60px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Abril Fatface", cursive;
+}
+.welcomeContainerTime span {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
-.welcomeContainerTextS{
-color: #FDCC9F;
-text-align: center;
-font-size: 13px;
-line-height: 5px;
-
-} 
-.welcomeContainerTextWallet{
-  color: #FFFFFF;
-font-size: 13px;
-font-weight: bold;
+.welcomeContainerTextS {
+  color: #fdcc9f;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: "Roboto";
+  font-weight: 800;
+}
+.welcomeContainerTextWallet {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
-.welcomeContenButtons{
+.welcomeContenButtons {
   position: absolute;
-  width: 55%;
+  width: 90%;
   height: 21%;
   bottom: 10px;
   padding: 3px;
   padding-right: 30px;
   z-index: 110;
 }
-.welcomeButtons{
+.welcomeButtons {
   position: absolute;
-  width: 50%;
+  width: 90%;
   height: 20%;
   bottom: 6px;
   z-index: 110;
 }
-.welcomePeople{
+.welcomePeople {
   position: absolute;
   bottom: -10px;
-  width: 20%;
-  z-index: 110;
+  width: 300px;
+  z-index: 100;
   margin-right: 30px;
 }

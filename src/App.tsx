@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
@@ -12,12 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      <Welcome />
-      {/*  <DownloadApp /> */}
-      {/*     <CreateWallet /> */}
+      {/* <Welcome /> */}
+      {/* <DownloadApp /> */}
+      {/* <CreateWallet /> */}
       {/* <ActiveQR /> */}
-      {/*   <FinishWallet /> */}
-      {/*   <ReadyScreen /> */}
+      {/* <FinishWallet /> */}
+      <ReadyScreen />
     </div>
   );
 }

@@ -1,67 +1,63 @@
-.finishWalletBackground{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.finishWalletBackground {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.FinishWalletFondo{
-    width: 100vw;
-    height: 100vh;
-    z-index: 99;
-    position: absolute;
+.FinishWalletFondo {
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  position: absolute;
 }
-.finishWalletContent{
-    position: absolute;
-    z-index:119;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.finishWalletContent {
+  position: relative;
+  z-index: 100;
+  text-align: center;
 }
-.finishWalletContentText{
-    position: absolute;
-    z-index: 120;
-    bottom: 80px;
-     font-size: 40px;
-    color: #00B7C2;
+.finishWalletContentText {
+  font-size: 50px;
+  padding-top: 50px;
+  font-weight: bold;
+  color: #00b7c2;
+  font-family: "Abril Fatface", cursive;
+  margin-bottom: 20px;
 }
 
-.finishWalletContentTitle{
-    position: absolute;
-    z-index: 120;
-     font-size: 20px;
-    color: #00B7C2;
-    top: 50px;
+.finishWalletContentTitle {
+  font-size: 40px;
+  color: #00b7c2;
+  line-height: 30px;
+  font-family: "Abril Fatface", cursive;
+  margin-top: 20px;
 }
 
-.FinisWalletInnerBara{
-    position: absolute;
-    z-index: 110;
-    height: 15px;
-    width: 100%;
-    background-color: #1B262C;
-    border-radius: 10px;
+.FinisWalletInnerBara {
+  position: absolute;
+  z-index: 110;
+  height: 15px;
+  width: 100%;
+  background-color: #1b262c;
+  border-radius: 10px;
 }
-.FinishWalletCircleBlack{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #1B262C;
-    border: 2px solid #F0DD0E;
+.FinishWalletCircleBlack {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #1b262c;
+  border: 2px solid #f0dd0e;
 }
-.finishWalletFooterText{
-    color: #00B7C2;
-    font-size: 14px;
-    position: absolute;
-    right: 0;
-    margin-left: 25px;
-    margin-top: 26px;
+.finishWalletFooterText {
+  color: #00b7c2;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  margin-left: 25px;
+  margin-top: 26px;
 }
