@@ -1,0 +1,102 @@
+
+.FondoWelcomeMobile{
+max-width: 468px;
+width: 90%;
+
+position: absolute;
+z-index: 99;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.logoPeronioMobile{
+    width: 20%;
+    position: absolute;
+    z-index: 120;
+    top: 40px;
+}
+.welcomeContainerMobile{
+    width: 400px;
+height: 400px;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+margin-left: 20px;
+
+}
+.welcomeMobileTitle{
+
+    color: #FCF7F2;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+.welcomeMobileContentGreeting{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+  .contentGreetingText{
+    position: relative;
+    margin: 0;
+    color: #F9ED32;
+    font-weight: bold;
+  } 
+.mobileWelcomeBarraLateral{
+        position: absolute;
+        z-index: 120;
+        width: 250px;
+        top:-10px;
+        
+    }
+    
+    
+.WelcomeMobileButton{
+    width: 40%;
+    margin-top: 34px;
+    
+}
+.titleButton{
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+@media(max-width:430px){
+    
+    .welcomeMobileTitle{
+        font-size:16px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .contentGreetingText{
+        font-size: 14px;
+
+    }
+.mobileWelcomeBarraLateral{
+    width: 200px;
+    margin-top: 4px;
+}
+    
+.WelcomeMobileButton{
+    width: 30%;
+}
+.titleButton{
+    font-size: 15px;
+    bottom: 110px;
+}
+
+
+
+}

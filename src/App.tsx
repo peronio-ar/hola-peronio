@@ -7,17 +7,21 @@ import CreateWallet from "./components/CreateWallet";
 import ActiveQR from "./components/ActiveQR";
 import FinishWallet from "./components/FinishWallet";
 import ReadyScreen from "./components/ReadyScreen";
+import MobileWelcome from "./components/MobileWelcome";
+import DownloadAppMobile from "./components/DownloadAppMobile";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Welcome />
+      {/*   <Welcome /> */}
       {/*  <DownloadApp /> */}
       {/*     <CreateWallet /> */}
       {/* <ActiveQR /> */}
       {/*   <FinishWallet /> */}
       {/*   <ReadyScreen /> */}
+      {/*   <MobileWelcome /> */}
+      <DownloadAppMobile />
     </div>
   );
 }

@@ -4,6 +4,8 @@
 @import url("./assets/styles/configure.css");
 @import url("./assets/styles/finishWallet.css");
 @import url("./assets/styles/readyScreen.css");
+@import url("./assets/styles/mobileWelcome.css");
+@import url("./assets/styles/downloadAppMobile.css");
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
