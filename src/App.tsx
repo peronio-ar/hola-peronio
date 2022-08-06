@@ -9,15 +9,14 @@ import FinishWallet from "./components/FinishWallet";
 import ReadyScreen from "./components/ReadyScreen";
 function App() {
   const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      {/* <Welcome /> */}
+    <div style={{background: "red"}} className="App">
+      {/*  <Welcome /> */}
       {/* <DownloadApp /> */}
       {/* <CreateWallet /> */}
       {/* <ActiveQR /> */}
       {/* <FinishWallet /> */}
-      <ReadyScreen />
+      {/* <ReadyScreen /> */}
     </div>
   );
 }
