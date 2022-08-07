@@ -6,7 +6,7 @@ import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.png"
 import {ConnectButton} from "@rainbow-me/rainbowkit";
 export default function ReadyScreen() {
   return (
-    <div className="readyScreenFondo">
+    <div className="readyScreen">
       <img
         src={readyScreenFondo}
         alt="readyScreenFondo"

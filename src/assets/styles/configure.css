@@ -11,9 +11,8 @@
 .activeQRfondo {
   width: 101%;
   height: 101%;
+  min-width: 1000px;
   position: absolute;
-  top: -4px;
-  left: -10px;
 }
 .createWalletBarraVertical {
   position: absolute;
@@ -23,6 +22,13 @@
   top: 20px;
   width: 200px;
 }
+
+@media screen and (max-width: 768px) {
+  .createWalletBarraVertical {
+    display: none;
+  }
+}
+
 .activeQRTime {
   position: absolute;
   z-index: 99;

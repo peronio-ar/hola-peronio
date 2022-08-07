@@ -10,6 +10,7 @@
 }
 .CreateWalletFondo {
   width: 100vw;
+  min-width: 1000px;
   height: 100vh;
   position: absolute;
   z-index: 99;
@@ -29,6 +30,12 @@
   top: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .createWalletBarra {
+    display: none;
+  }
+}
+
 .contentButton {
   position: absolute;
   z-index: 99;
@@ -38,6 +45,17 @@
   justify-content: center;
   top: 150px;
 }
+
+@media screen and (max-width: 768px) {
+  .createWalletBarra {
+    display: none;
+  }
+
+  .contentButton {
+    top: 200px;
+  }
+}
+
 .contentButtonText {
   color: #ffff;
   font-size: 15px;

@@ -38,10 +38,7 @@ export default function Configure({handleClickNext, counter}: any) {
               <>
                 {account ? (
                   <img
-                    onClick={async () => {
-                      let result = await handleClickNext();
-                      console.log(result);
-                    }}
+                    onClick={handleClickNext}
                     src={ActiveQRButton}
                     alt="ActiveQRButton"
                     className="ActiveQRButton"
@@ -49,8 +46,8 @@ export default function Configure({handleClickNext, counter}: any) {
                 ) : (
                   <img
                     onClick={async () => {
-                      let result = await openConnectModal();
-                      console.log(result);
+                      await openConnectModal();
+                      handleClickNext;
                     }}
                     src={ActiveQRButton}
                     alt="ActiveQRButton"
