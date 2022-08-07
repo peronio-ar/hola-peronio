@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundWelcome from "../assets/images/ImagesWelcome/Recurso 2.png";
+import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcome.png";
 import welcomeContainer from "../assets/images/ImagesWelcome/welcomeContainer.png";
 import welcomeSun from "../assets/images/ImagesWelcome/welcomSun.png";
 import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.png";
@@ -8,9 +8,15 @@ import welcomeCircle from "../assets/images/ImagesWelcome/welcomeCircle.png";
 import welcomeContenButtons from "../assets/images/ImagesWelcome/welcomeContenButtons.png";
 import welcomeButtons from "../assets/images/ImagesWelcome/welcomeButtons.png";
 import welcomePeople from "../assets/images/ImagesWelcome/welcomePeople.png";
-export default function Welcome() {
-  const handleClickAppStore = () => {};
-  const handleClickGooglePlay = () => {};
+export default function Welcome({handleClickNext, setIsApple}: any) {
+  const handleClickAppStore = () => {
+    handleClickNext();
+    setIsApple(true);
+  };
+  const handleClickGooglePlay = () => {
+    handleClickNext();
+    setIsApple(false);
+  };
 
   return (
     <div className="welcomeBackground">

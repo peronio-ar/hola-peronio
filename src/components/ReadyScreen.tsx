@@ -3,6 +3,7 @@ import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo.png"
 import readyScreenBarraVertical from "../assets/images/ReadyScreen/readyScreenBarraVertical.png";
 import readyScreenButton from "../assets/images/ReadyScreen/readyScreenButton.png";
 import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.png";
+import {ConnectButton} from "@rainbow-me/rainbowkit";
 export default function ReadyScreen() {
   return (
     <div className="readyScreenFondo">
@@ -18,11 +19,24 @@ export default function ReadyScreen() {
       />
       <div className="finishScreenContent">
         <p className="finishContentText">¡Todo listo, Compañero!</p>
-        <img
-          src={readyScreenButton}
-          alt="readyScreenButton"
-          className="readyScreenButton"
-        />
+
+        <ConnectButton.Custom>
+          {({account, openAccountModal}) => {
+            return (
+              <>
+                <img
+                  src={readyScreenButton}
+                  alt="readyScreenButton"
+                  className="readyScreenButton"
+                />
+                <div onClick={openAccountModal} className="readyScreenText">
+                  <p> Tu direccion es: </p>
+                  <p> {account?.address} </p>
+                </div>
+              </>
+            );
+          }}
+        </ConnectButton.Custom>
 
         <p style={{textAlign: "center"}}>
           <strong>

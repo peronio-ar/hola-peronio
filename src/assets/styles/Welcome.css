@@ -12,6 +12,19 @@
   align-items: center;
 }
 
+.mobileWelcome {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .welcomeBackground {
+    display: none;
+  }
+  .mobileWelcome {
+    display: flex;
+  }
+}
+
 .backgroundImage {
   position: absolute;
   top: 0px;
@@ -93,7 +106,6 @@
   width: 80%;
   height: 68%;
   z-index: 110;
-  top: 18px;
 }
 .container-text {
   position: absolute;
@@ -137,6 +149,7 @@
   font-size: 13px;
   line-height: 15px;
   font-family: "Roboto";
+
   font-weight: 800;
 }
 .welcomeContainerTextWallet {

@@ -1,60 +1,63 @@
-
-.ActiveQRBackground{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ActiveQRBackground {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.activeQRfondo{
-    width: 101%;
-    position: absolute;
-    top: -10px;
-    left: -10px;
+.activeQRfondo {
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  top: -4px;
+  left: -10px;
 }
-.createWalletBarraVertical{
-    position: absolute;
-    z-index: 99;
-    width: 13%;
-    right: 310px;
-    top: 70px;
+.createWalletBarraVertical {
+  position: absolute;
+  z-index: 99;
+  width: 13%;
+  right: 20px;
+  top: 20px;
+  width: 200px;
 }
-.activeQRTime{
-    position: absolute;
-    z-index: 99;
-    left: 450px;
-    top: 30px;
-    width: 8%;
+.activeQRTime {
+  position: absolute;
+  z-index: 99;
+  left: 20px;
+  top: 20px;
+  width: 140px;
+  color: red !important;
 }
-.activeQRContent{
-    position: absolute;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+.activeQRContent {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 }
-.activeQRContenText{
-    color: #F9ED32;
-    font: 800;
-    text-align: center;
-    position: absolute;
-    right: 0 ;
-    left: 0;
-    top: 6px;
-    font-size: 40px;
-    font-weight: bold;
-
+.activeQRContenText {
+  color: #f9ed32;
+  font: 800;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 6px;
+  font-size: 40px;
+  font-weight: bold;
 }
-.activeQRContentParraf{
-    color: #1B262C;
-    font-weight: bold;
+.activeQRContentParraf {
+  color: #1b262c;
+  font-weight: bold;
 }
-.configureButton{
-    width: 40%;
-   
+.ActiveQRButton {
+  cursor: pointer;
+}
+.configureButton {
+  width: 40%;
 }

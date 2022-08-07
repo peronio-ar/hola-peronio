@@ -6,7 +6,10 @@ import DownloadBarcode from "../assets/images/ImagesDownloadApp/DownloadBarcode.
 import downloadButton from "../assets/images/ImagesDownloadApp/downloadButton.png";
 import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.png";
 import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.png";
-export default function DownloadApp() {
+import qrApple from "../assets/images/ImagesDownloadApp/qrApple.svg";
+import qrPlayStore from "../assets/images/ImagesDownloadApp/qrPlayStore.svg";
+import Counter from "./Counter";
+export default function DownloadApp({handleClickNext, counter, isApple}: any) {
   return (
     <div className="DownloadAppBackgorund">
       <img
@@ -21,9 +24,16 @@ export default function DownloadApp() {
           alt="LogoPeronioWhite"
           className="navIconLogo"
         />
-        <img src={DownloadReloj} alt="DownloadReloj" className="navIconReloj" />
+        <div className="navIconReloj">
+          <Counter counterNumber={counter} />
+        </div>
       </div>
       <div className="DownloadContent">
+        <img
+          src={isApple ? qrApple : qrPlayStore}
+          alt="DownloadBarcode"
+          className="DownloadBarcodeQr"
+        />
         <img
           src={DownloadBarcode}
           alt="DownloadBarcode"
@@ -31,6 +41,7 @@ export default function DownloadApp() {
         />
 
         <img
+          onClick={handleClickNext}
           src={downloadButton}
           alt="downloadButton"
           className="downloadButton"
@@ -39,7 +50,7 @@ export default function DownloadApp() {
 
       <div className="contentBarra">
         <img src={downloadCar2} alt="downloadCar2" className="downloadCar2" />
-        <div className="ContentInnerBara">.</div>
+        {/* <div className="ContentInnerBara">.</div> */}
 
         <div className="circleOfBarra">
           <div className="FinishWalletCircleBlack">.</div>
@@ -54,7 +65,7 @@ export default function DownloadApp() {
           {/* </div> */}
         </div>
 
-        <p className="downloadText">"!perdon,perdon,gran conductor!..."</p>
+        <p className="downloadText">"!Peron, Peron, gran conductor! ..."</p>
       </div>
     </div>
   );

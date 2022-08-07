@@ -4,6 +4,9 @@
 @import url("./assets/styles/configure.css");
 @import url("./assets/styles/finishWallet.css");
 @import url("./assets/styles/readyScreen.css");
+@import url("./assets/styles/mobileWelcome.css");
+@import url("./assets/styles/downloadAppMobile.css");
+@import url("./assets/styles/counter.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap");
 

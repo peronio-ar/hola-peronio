@@ -43,6 +43,27 @@
   width: 350px;
   margin: 0;
 }
+.readyScreenText {
+  position: absolute;
+  height: 80px;
+  padding: 30px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex-direction: column;
+  color: #39b54a;
+  overflow: hidden;
+  width: 300px;
+}
+.readyScreenText p {
+  margin: 0;
+  text-align: center;
+
+  width: 100%;
+  overflow-wrap: break-word;
+  line-height: 20px;
+}
 .finishScreenContentParrafo {
   margin: 0;
   line-height: 10px;

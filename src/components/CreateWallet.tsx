@@ -7,8 +7,9 @@ import createWalletBUTTONS from "../assets/images/CreateWallet/createWalletBUTTO
 import createWalletButton from "../assets/images/CreateWallet/createWalletButton.png";
 import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.png";
 import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.png";
+import Counter from "./Counter";
 
-export default function CreateWallet() {
+export default function CreateWallet({handleClickNext, counter}: any) {
   return (
     <div className="createWalletBackground">
       <img
@@ -18,17 +19,17 @@ export default function CreateWallet() {
       />
 
       <img
+        onClick={handleClickNext}
         src={createWalletButton}
         alt="createWalletButton"
         className="createWalletButton"
       />
 
       <div className="createWalletContainer">
-        <img
-          src={createWalletTime}
-          alt="createWalletTime"
-          className="createWalletTime"
-        />
+        <div className="createWalletTime">
+          <Counter counterNumber={counter} />
+        </div>
+
         <img
           src={createWalletBarra}
           alt="createWalletBarra"
@@ -42,7 +43,7 @@ export default function CreateWallet() {
           alt="createWalletCartel"
           className="createWalletCartel"
         />
-        <p className="contentButtonText">abri la aplicaion y toca</p>
+        <p className="contentButtonText">Abri la aplicacion y toca</p>
         <img
           src={createWalletBUTTONS}
           alt="createWalletBUTTONS"
@@ -51,13 +52,14 @@ export default function CreateWallet() {
       </div>
 
       <div className="contentBarra">
-        <img src={downloadCar2} alt="downloadCar2" className="downloadCar2" />
+        <img src={downloadCar2} alt="downloadCar2" className="downloadCar3" />
         <div className="ContentInnerBara">.</div>
 
         <div className="circleOfBarra">
           <div className="downloadCircleBlack">.</div>
           {/*  <div className='downloadCircle'> */}
-          <img src={downloadIcon} alt="downloadIcon" />
+          <div className="downloadCircleBlack">.</div>
+          {/*   <img src={downloadIcon} alt="downloadIcon" /> */}
           {/* </div> */}
           {/*  <div className='downloadCircle'> */}
           <img src={downloadIcon} alt="downloadIcon" />
@@ -67,7 +69,7 @@ export default function CreateWallet() {
           {/* </div> */}
         </div>
 
-        <p className="downloadText">"!perdon,perdon,gran conductor!..."</p>
+        {/* <p className="downloadText">"!perdon,perdon,gran conductor!..."</p> */}
       </div>
     </div>
   );
