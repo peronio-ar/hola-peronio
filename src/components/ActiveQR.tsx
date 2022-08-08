@@ -32,6 +32,7 @@ export default function Configure({handleClickNext, counter}: any) {
         <p className="activeQRContentParraf">
           Activá el escaner de QR y hacé click en Conectar
         </p>
+        <ConnectButton />
         <ConnectButton.Custom>
           {({openConnectModal, account}) => {
             return (

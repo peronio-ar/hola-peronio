@@ -9,7 +9,7 @@ import FinishWallet from "./components/FinishWallet";
 import ReadyScreen from "./components/ReadyScreen";
 import MobileWelcome from "./components/MobileWelcome";
 import DownloadAppMobile from "./components/DownloadAppMobile";
-
+import {Buffer} from "buffer";
 import "@rainbow-me/rainbowkit/styles.css";
 
 import {getDefaultWallets, RainbowKitProvider} from "@rainbow-me/rainbowkit";
