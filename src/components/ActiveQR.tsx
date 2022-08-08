@@ -1,11 +1,11 @@
 import activeQRfondo from "../assets/images/ActiveQR/activeQRfondo.png";
-import createWalletBarraVertical from "../assets/images/ActiveQR/createWalletBarraVertical.png";
+import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.png";
 import activeQRBarra from "../assets/images/ActiveQR/activeQRBarra.png";
 import ActiveQRButton from "../assets/images/ActiveQR/ActiveQRButton.png";
 import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.png";
 import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.png";
 import Counter from "./Counter";
-
+import {useEffect} from "react";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
 
 export default function Configure({handleClickNext, counter}: any) {
@@ -32,9 +32,12 @@ export default function Configure({handleClickNext, counter}: any) {
         <p className="activeQRContentParraf">
           Activá el escaner de QR y hacé click en Conectar
         </p>
-        <ConnectButton />
+        {/* <ConnectButton /> */}
         <ConnectButton.Custom>
           {({openConnectModal, account}) => {
+            useEffect(() => {
+              if (account) handleClickNext();
+            }, [account]);
             return (
               <>
                 {account ? (
@@ -46,10 +49,7 @@ export default function Configure({handleClickNext, counter}: any) {
                   />
                 ) : (
                   <img
-                    onClick={async () => {
-                      await openConnectModal();
-                      handleClickNext;
-                    }}
+                    onClick={openConnectModal}
                     src={ActiveQRButton}
                     alt="ActiveQRButton"
                     className="ActiveQRButton"

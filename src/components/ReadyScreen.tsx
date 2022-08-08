@@ -1,6 +1,6 @@
 import React from "react";
 import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo.png";
-import readyScreenBarraVertical from "../assets/images/ReadyScreen/readyScreenBarraVertical.png";
+import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.png";
 import readyScreenButton from "../assets/images/ReadyScreen/readyScreenButton.png";
 import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.png";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
