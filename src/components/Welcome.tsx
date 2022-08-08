@@ -43,7 +43,7 @@ export default function Welcome({handleClickNext, setIsApple}: any) {
           className="welcomeImageSpikes"
         />
         <div className="container-text">
-          <p className="welcomeContainerText">Usar Peroinio </p>
+          <p className="welcomeContainerText">Usar Peronio </p>
           <p className="welcomeContainerText"> Te va a llevar un total de</p>
           <img
             src={welcomeCircle}
