@@ -2,7 +2,7 @@
   width: 100vw;
   min-height: 800px;
   height: 100vh;
-
+  background: rgba(252, 247, 242, 1);
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -12,11 +12,25 @@
 }
 
 .FinishWalletFondo {
-  width: 100vw;
   height: 100%;
-  min-width: 1000px;
-  z-index: 99;
+  width: auto;
   position: absolute;
+  z-index: 99;
+  top: 0px;
+}
+
+@media screen and (min-width: 1600px) {
+  .FinishWalletFondo {
+    width: 100%;
+
+    height: auto;
+  }
+}
+
+.finishSunContainer {
+  width: 498px;
+  height: 495px;
+  margin-top: 1px;
 }
 .finishWalletContent {
   position: relative;
@@ -44,13 +58,19 @@
   color: #00b7c2;
   line-height: 30px;
   font-family: "Abril Fatface", cursive;
+  width: 100%;
+  max-width: 400px;
 
-  margin: 0 auto;
-  left: 0;
   right: 0;
+  left: 0;
+  margin: auto;
   bottom: 120px;
 }
-
+@media screen and (max-width: 600px) {
+  .finishWalletContentTitle {
+    max-width: 300px;
+  }
+}
 .finishWalletContentButton {
   background: #00b7c2;
   width: 200px;

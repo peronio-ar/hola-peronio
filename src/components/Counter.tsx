@@ -1,5 +1,6 @@
 import React from "react";
-import counter from "../assets/images/counter.png";
+import counter from "../assets/images/counter.svg";
+import counterBlack from "../assets/images/counterBlack.svg";
 
 interface props {
   counterNumber: number;
@@ -12,12 +13,7 @@ export default function Counter({
 }: props) {
   return (
     <div className="counter">
-      <div
-        className="counterText"
-        style={{color: activeBlack ? "#3d3333" : "white"}}
-      >
-        {counterNumber}
-      </div>
+      <div className="counterText">{counterNumber}</div>
 
       <div className="card">
         <div className="percent">
@@ -35,7 +31,11 @@ export default function Counter({
         </div>
       </div>
 
-      <img src={counter} alt="DownloadReloj" className="navIconReloj" />
+      <img
+        src={activeBlack ? counterBlack : counter}
+        alt="DownloadReloj"
+        className="navIconReloj"
+      />
     </div>
   );
 }

@@ -1,9 +1,6 @@
-import React from "react";
 import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcomeMobile.svg";
 import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
-import MobileWelcomeContent from "../assets/images/MobileWelcome/MobileWelcomeContent.svg";
 import mobileWelcomePerson from "../assets/images/MobileWelcome/mobileWelcomePerson.svg";
-
 export default function MobileWelcome({handleClickNext}: any) {
   const handleClickButton = () => {
     let navegador = navigator.userAgent;
@@ -55,52 +52,20 @@ export default function MobileWelcome({handleClickNext}: any) {
             </div>
           </div>
 
-          {/* <img
-            src={MobileWelcomeContent}
-            alt="FondoWelcomeMobile"
-            className="FondoWelcomeMobile"
-          /> */}
+          <div className="mobileContainerButtons">
+            <button
+              onClick={handleClickButton}
+              className="mobileButton titleButton"
+            >
+              DESCARGAR
+            </button>
+          </div>
           <img
             src={mobileWelcomePerson}
-            alt="mobileWelcomePerson"
+            alt="logoPeronio"
             className="mobileWelcomePerson"
           />
         </div>
-        {/* <img
-          src={FondoWelcomeMobile}
-          alt="FondoWelcomeMobile"
-          className="FondoWelcomeMobile"
-        />
-        <div className="welcomeContainerMobile">
-          
-          <div className="welcomeMobileContentGreeting">
-            <p className="contentGreetingText">Bienvenido al</p>
-            <p className="contentGreetingText"> mundo de Peronio</p>
-            <img
-              src={mobileWelcomeBarraLateral}
-              alt="mobileWelcomeBarraLateral"
-              className="mobileWelcomeBarraLateral"
-            />
-          </div>
-
-          <div className="mobileWelcomeTextS">
-            <p className="welcomeContainerTextS">PARA ARRANCAR </p>
-            <p className="welcomeContainerTextS">
-              DESCARGATE
-              <span className="welcomeContainerTextWallet">ALPHA WALLET</span>
-            </p>
-            <p className="welcomeContainerTextS">EN TU TELEFONO</p>
-          </div>
-          <img
-            onClick={handleClickButton}
-            src={WelcomeMobileButton}
-            alt="WelcomeMobileButton"
-            className="WelcomeMobileButton"
-          />
-          <p onClick={handleClickButton} className="titleButton">
-            DESCARGAR
-          </p> */}
-        {/*  </div> */}
       </div>
     </div>
   );

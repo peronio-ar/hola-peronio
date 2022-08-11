@@ -1,12 +1,17 @@
 import React from "react";
-import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo.png";
-import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.png";
-import readyScreenButton from "../assets/images/ReadyScreen/readyScreenButton.png";
-import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.png";
+import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo.svg";
+import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.svg";
+import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.svg";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
+import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 export default function ReadyScreen() {
   return (
     <div className="readyScreen">
+      <img
+        src={LogoPeronio}
+        alt="createLogoPeronio"
+        className="createLogoPeronio"
+      />
       <img
         src={readyScreenFondo}
         alt="readyScreenFondo"
@@ -23,28 +28,29 @@ export default function ReadyScreen() {
         <ConnectButton.Custom>
           {({account, openAccountModal}) => {
             return (
-              <>
-                <img
-                  src={readyScreenButton}
-                  alt="readyScreenButton"
-                  className="readyScreenButton"
-                />
-                <div onClick={openAccountModal} className="readyScreenText">
-                  <p> Tu direccion es: </p>
-                  <p> {account?.address} </p>
-                </div>
-              </>
+              <button className="readyScreenButton" onClick={openAccountModal}>
+                Tu direccion es: <br />
+                {account?.address}
+              </button>
             );
           }}
         </ConnectButton.Custom>
 
-        <p style={{textAlign: "center"}}>
+        <p className="readyScreenTextFinal">
           <strong>
-            Para recibir tenes que compartir tu dirección: <br />{" "}
+            Para recibir tenes que compartir tu dirección: <br />
             copiando/pegando o compartiendo QR.
           </strong>
         </p>
-        <img src={readyScreenArrow} alt="readyScreenButton" />
+
+        <img
+          src={readyScreenArrow}
+          alt="readyScreenArrow"
+          className="readyScreenArrow"
+        />
+        <p className="readyScreenArrowText">
+          Es equivalente a un CBU <br /> en el mundo cryto
+        </p>
       </div>
     </div>
   );

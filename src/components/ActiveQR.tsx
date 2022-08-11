@@ -1,9 +1,9 @@
-import activeQRfondo from "../assets/images/ActiveQR/activeQRfondo.png";
-import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.png";
-import activeQRBarra from "../assets/images/ActiveQR/activeQRBarra.png";
-import ActiveQRButton from "../assets/images/ActiveQR/ActiveQRButton.png";
-import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.png";
-import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.png";
+import activeQRfondo from "../assets/images/ActiveQR/activeQRFondo.svg";
+import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.svg";
+
+import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
+import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.svg";
+import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 import Counter from "./Counter";
 import {useEffect} from "react";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
@@ -12,6 +12,13 @@ export default function Configure({handleClickNext, counter}: any) {
   return (
     <div className="ActiveQRBackground">
       <img src={activeQRfondo} alt="activeQRfondo" className="activeQRfondo" />
+
+      <img
+        src={LogoPeronio}
+        alt="createLogoPeronio"
+        className="createLogoPeronio"
+      />
+
       <img
         src={createWalletBarraVertical}
         alt="createWalletBarraVertical"
@@ -23,16 +30,13 @@ export default function Configure({handleClickNext, counter}: any) {
       </div>
 
       <div className="activeQRContent">
-        <p className="activeQRContenText">EN LA APP</p>
-        <img
-          src={activeQRBarra}
-          alt="activeQRBarra"
-          className="activeQRBarra"
-        />
+        <div className="activeQRBarra">
+          <p className="activeQRContenText">EN LA APP</p>
+        </div>
+
         <p className="activeQRContentParraf">
-          Activá el escaner de QR y hacé click en Conectar
+          Activá el escaner de QR y <br /> hacé click en Conectar
         </p>
-        {/* <ConnectButton /> */}
         <ConnectButton.Custom>
           {({openConnectModal, account}) => {
             useEffect(() => {
@@ -41,19 +45,16 @@ export default function Configure({handleClickNext, counter}: any) {
             return (
               <>
                 {account ? (
-                  <img
-                    onClick={handleClickNext}
-                    src={ActiveQRButton}
-                    alt="ActiveQRButton"
-                    className="ActiveQRButton"
-                  />
+                  <button onClick={handleClickNext} className="contentButtonQr">
+                    CONFIGURAR
+                  </button>
                 ) : (
-                  <img
+                  <button
                     onClick={openConnectModal}
-                    src={ActiveQRButton}
-                    alt="ActiveQRButton"
-                    className="ActiveQRButton"
-                  />
+                    className="contentButtonQr"
+                  >
+                    CONFIGURAR
+                  </button>
                 )}
               </>
             );
@@ -66,9 +67,9 @@ export default function Configure({handleClickNext, counter}: any) {
         <div className="ContentInnerBara2">.</div>
 
         <div className="circleOfBarra">
-          <div className="downloadCircleBlack">.</div>
-          <div className="downloadCircleBlack">.</div>
-          <div className="downloadCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
           <img src={downloadIcon} alt="downloadIcon" />
         </div>
       </div>

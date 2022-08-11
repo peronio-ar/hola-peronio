@@ -27,8 +27,18 @@
 
 .backgroundImage {
   height: 100%;
+  width: auto;
   position: absolute;
   z-index: 99;
+  top: 0px;
+}
+
+@media screen and (min-width: 1800px) {
+  .backgroundImage {
+    width: 100%;
+
+    height: auto;
+  }
 }
 .containerTitle-logo {
   position: absolute;

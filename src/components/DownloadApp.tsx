@@ -1,11 +1,11 @@
-import React from "react";
-import DownloadAppFondo from "../assets/images/ImagesDownloadApp/DownloadAppFondo.png";
-import LogoPeronioWhite from "../assets/images/ImagesDownloadApp/LogoPeronioWhite.png";
-import DownloadReloj from "../assets/images/ImagesDownloadApp/DownloadReloj.png";
-import DownloadBarcode from "../assets/images/ImagesDownloadApp/DownloadBarcode.png";
-import downloadButton from "../assets/images/ImagesDownloadApp/downloadButton.png";
-import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.png";
-import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.png";
+import DownloadAppFondo from "../assets/images/ImagesDownloadApp/DownloadAppFondo.svg";
+import LogoPeronioWhite from "../assets/images/ImagesDownloadApp/logoPeronioWhite.svg";
+
+import DownloadBarcode from "../assets/images/ImagesDownloadApp/DownloadBarcode.svg";
+import barcodeLine from "../assets/images/ImagesDownloadApp/barcodeLine.svg";
+
+import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.svg";
+import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
 import qrApple from "../assets/images/ImagesDownloadApp/qrApple.svg";
 import qrPlayStore from "../assets/images/ImagesDownloadApp/qrPlayStore.svg";
 import Counter from "./Counter";
@@ -40,29 +40,19 @@ export default function DownloadApp({handleClickNext, counter, isApple}: any) {
           className="DownloadBarcode"
         />
 
-        <img
-          onClick={handleClickNext}
-          src={downloadButton}
-          alt="downloadButton"
-          className="downloadButton"
-        />
+        <button onClick={handleClickNext} className="barcodeButton">
+          YA LA DESCARGUE
+          <img src={barcodeLine} alt="barcodeLine" className="barcodeLine" />
+        </button>
       </div>
 
       <div className="contentBarra">
         <img src={downloadCar2} alt="downloadCar2" className="downloadCar2" />
-        {/* <div className="ContentInnerBara">.</div> */}
-
         <div className="circleOfBarra">
           <div className="FinishWalletCircleBlack">.</div>
-          {/*  <div className='downloadCircle'> */}
           <img src={downloadIcon} alt="downloadIcon" />
-          {/* </div> */}
-          {/*  <div className='downloadCircle'> */}
           <img src={downloadIcon} alt="downloadIcon" />
-          {/* </div> */}
-          {/* <div className='downloadCircle'> */}
           <img src={downloadIcon} alt="downloadIcon" />
-          {/* </div> */}
         </div>
 
         <p className="downloadText">"!Peron, Peron, gran conductor! ..."</p>

@@ -67,6 +67,8 @@ function App() {
     };
   }, [activeCounter]);
 
+  console.log(step);
+
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>

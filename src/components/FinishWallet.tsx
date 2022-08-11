@@ -1,9 +1,16 @@
-import FinishWalletFondo from "../assets/images/FinishWallet/FinishWalletFondo.png";
-import CounterFinishWallet from "../assets/images/FinishWallet/CounterFinishWallet.png";
-import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.png";
+import FinishWalletFondo from "../assets/images/FinishWallet/FinishWalletFondo.svg";
+import CounterFinishWallet from "../assets/images/FinishWallet/CounterFinishWallet.svg";
+import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
+import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 export default function FinishWallet({handleClickNext, counter}: any) {
   return (
     <div className="finishWalletBackground">
+      <img
+        src={LogoPeronio}
+        alt="createLogoPeronio"
+        className="createLogoPeronio"
+      />
+
       <img
         src={FinishWalletFondo}
         alt="FinishWalletFondo"
@@ -36,7 +43,11 @@ export default function FinishWallet({handleClickNext, counter}: any) {
             </svg>
           </div>
         </div>
-        <img src={CounterFinishWallet} alt="FinishWalletFondo" className="" />
+        <img
+          src={CounterFinishWallet}
+          alt="FinishWalletFondo"
+          className="finishSunContainer"
+        />
         <p className="finishWalletContentTitle">Tardaste {counter} segundos</p>
         <p onClick={handleClickNext} className="finishWalletContentButton">
           CONTINUAR
@@ -47,10 +58,10 @@ export default function FinishWallet({handleClickNext, counter}: any) {
         <img src={downloadCar2} alt="downloadCar2" className="downloadCar5" />
 
         <div className="circleOfBarra">
-          <div className="downloadCircleBlack">.</div>
-          <div className="downloadCircleBlack">.</div>
-          <div className="downloadCircleBlack">.</div>
-          <div className="downloadCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
+          <div className="FinishWalletCircleBlack">.</div>
         </div>
 
         <p className="finishWalletFooterText">

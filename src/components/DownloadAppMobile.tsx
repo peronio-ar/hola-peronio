@@ -1,6 +1,6 @@
 import React from "react";
-import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.png";
-import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcome.png";
+import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
+import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcomeMobile.svg";
 import FondoDowloadAppMobile from "../assets/images/DownloadAppMobile/FondoDowloadAppMobile.png";
 import ButtonDownloadApp from "../assets/images/DownloadAppMobile/ButtonDownloadApp.png";
 
@@ -9,31 +9,23 @@ export default function DownloadAppMobile({
   handleClickNext,
 }: any) {
   return (
-    <div className="welcomeBackground mobileDownloadApp">
+    <div className="mobileWelcomeContainer mobileWelcome">
       <img
         src={backgroundWelcome}
         alt="backgroundWelcome"
-        className="backgroundImage"
+        className="backgroundImageMobile"
       />
-      <img
-        src={logoPeronio}
-        alt="logoPeronio"
-        className="logoPeronioMobileDownload"
-      />
-      <img
-        src={FondoDowloadAppMobile}
-        alt="FondoDowloadAppMobile"
-        className="FondoDowloadAppMobile"
-      />
-
-      <div className="contentDownloadAppMobile">
-        <p className="titleContentDowloadMobile">Ya lo Descargaste</p>
+      <div className="containerMobile">
         <img
-          src={ButtonDownloadApp}
-          alt="ButtonDownloadApp"
-          className="ButtonDownloadApp"
+          src={logoPeronio}
+          alt="logoPeronio"
+          className="logoPeronioMobile"
         />
-        <div className="textButtonContent">
+      </div>
+
+      <div className="contentMobileDownload">
+        <p className="titleContentDowloadMobile">Ya lo Descargaste</p>
+        <div className="containerButtonsDownload">
           <p onClick={handleClickNext} className="buttonAnswer-SI">
             SI
           </p>
@@ -42,6 +34,18 @@ export default function DownloadAppMobile({
           </p>
         </div>
       </div>
+
+      {/*  <div className="contentDownloadAppMobile">
+      
+        <img
+          src={ButtonDownloadApp}
+          alt="ButtonDownloadApp"
+          className="ButtonDownloadApp"
+        />
+        <div className="textButtonContent">
+          
+        </div>
+      </div> */}
     </div>
   );
 }
