@@ -98,7 +98,7 @@
 }
 
 .contentMobileWelcome {
-  background-image: url("../images/MobileWelcome/MobileWelcomeContent.svg");
+  background-image: url("../images/MobileWelcome/mobileWelcomeContent.svg");
   background-repeat: no-repeat;
   background-position: center center;
   max-width: 680px;
