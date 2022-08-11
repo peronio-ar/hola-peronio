@@ -1,4 +1,4 @@
-import activeQRfondo from "../assets/images/ActiveQR/activeQRFondo.svg";
+import activeQRfondo from "../assets/images/ActiveQR/ActiveQRFondo.svg";
 import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.svg";
 
 import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
