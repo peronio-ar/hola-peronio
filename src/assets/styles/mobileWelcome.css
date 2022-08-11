@@ -1,18 +1,23 @@
-.FondoWelcomeMobile {
-  max-width: 468px;
-  width: 90%;
-
-  position: absolute;
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.mobileWelcomeContainer {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  background: rgb(27, 38, 44);
 }
-.logoPeronioMobile {
-  width: 20%;
+
+.backgroundImageMobile {
   position: absolute;
-  z-index: 120;
-  top: 40px;
+
+  width: 100%;
+}
+
+.logoPeronioMobile {
+  max-width: 361px;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 .welcomeContainerMobile {
   width: 400px;
@@ -24,11 +29,17 @@
   flex-direction: column;
   margin-left: 20px;
 }
+
+.containerMobile {
+  position: relative;
+  z-index: 101;
+  text-align: center;
+}
 .welcomeMobileTitle {
   color: #fcf7f2;
   font-size: 35px;
   font-weight: bold;
-  margin-bottom: 40px;
+  padding-top: 30px;
   font-family: "Abril Fatface", cursive;
 }
 .welcomeMobileContentGreeting {
@@ -76,11 +87,103 @@
   margin: 10px 0px;
 }
 
-@media (max-width: 430px) {
+.contentMobileWelcome {
+  background-image: url("../images/MobileWelcome/MobileWelcomeContent.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 680px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 600px;
+  padding-top: 20px;
+}
+.contentTextMobile {
+  position: relative;
+  z-index: 50;
+}
+
+.FondoWelcomeMobile {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomePinkContent {
+  background-image: url("../images/MobileWelcome/mobilePickContent.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 260px;
+  width: 60%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileWelcomePerson {
+  position: absolute;
+  bottom: -80px;
+
+  width: 100%;
+  left: 8px;
+  max-width: 400px;
+}
+
+.welcomeContainerTextWalletMobile {
+  color: #ffffff;
+  font-size: 18px;
+  padding-left: 5px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.welcomeContainerTextSMobile {
+  color: #fdcc9f;
+  text-align: center;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Roboto";
+  font-weight: 800;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .welcomeContainerTextS {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .welcomeContainerTextWallet {
+    font-size: 18px;
+  }
+}
+@media (max-width: 568px) {
+  .backgroundImageMobile {
+    height: 100%;
+    width: auto;
+  }
+  .welcomePinkContent {
+    height: 60px;
+  }
   .welcomeMobileTitle {
-    font-size: 16px;
+    padding-top: 40px;
+  }
+  .welcomeContainerTextS {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .welcomeContainerTextWallet {
+    font-size: 12px;
+  }
+  .welcomeMobileTitle {
+    font-size: 20px;
     margin-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .contentGreetingText {
     font-size: 14px;

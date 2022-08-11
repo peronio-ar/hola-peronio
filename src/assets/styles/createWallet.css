@@ -9,8 +9,8 @@
   align-items: center;
 }
 .CreateWalletFondo {
-  width: 100vw;
-  min-width: 1000px;
+  /* width: 100vw; */
+
   height: 100vh;
   position: absolute;
   z-index: 99;

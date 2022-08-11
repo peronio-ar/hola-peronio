@@ -1,5 +1,5 @@
 import React from "react";
-import CreateWalletFondo from "../assets/images/CreateWallet/CreateWalletFondo.png";
+import CreateWalletFondo from "../assets/images/CreateWallet/CreateWalletFondo.svg";
 import createWalletTime from "../assets/images/CreateWallet/createWalletTime.png";
 import createWalletBarra from "../assets/images/Captures/Capture1Screen3.png";
 import createWalletCartel from "../assets/images/CreateWallet/createWalletCartel.png";

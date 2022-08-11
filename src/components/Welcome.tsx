@@ -1,13 +1,14 @@
 import React from "react";
-import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcome.png";
-import welcomeContainer from "../assets/images/ImagesWelcome/welcomeContainer.png";
-import welcomeSun from "../assets/images/ImagesWelcome/welcomSun.png";
-import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.png";
-import welcomeImageSpikes from "../assets/images/ImagesWelcome/welcomeImageSpikes.png";
-import welcomeCircle from "../assets/images/ImagesWelcome/welcomeCircle.png";
-import welcomeContenButtons from "../assets/images/ImagesWelcome/welcomeContenButtons.png";
-import welcomeButtons from "../assets/images/ImagesWelcome/welcomeButtons.png";
-import welcomePeople from "../assets/images/ImagesWelcome/welcomePeople.png";
+import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcome.svg";
+import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
+import welcomeContainer from "../assets/images/ImagesWelcome/welcomeContainer.svg";
+import welcomePeople from "../assets/images/ImagesWelcome/welcomePeople.svg";
+import welcomeSun from "../assets/images/ImagesWelcome/welcomeSun.svg";
+import welcomeContentButtons from "../assets/images/ImagesWelcome/welcomeContentButtons.svg";
+import welcomeAppStore from "../assets/images/ImagesWelcome/welcomeAppStore.svg";
+import welcomeAndroid from "../assets/images/ImagesWelcome/welcomeAndroid.svg";
+
+import welcomeCircle from "../assets/images/ImagesWelcome/welcomeCircle.svg";
 export default function Welcome({handleClickNext, setIsApple}: any) {
   const handleClickAppStore = () => {
     handleClickNext();
@@ -25,26 +26,24 @@ export default function Welcome({handleClickNext, setIsApple}: any) {
         alt="backgroundWelcome"
         className="backgroundImage"
       />
+
       <div className="containerTitle-logo">
         <p className="welcome">Hola</p>
         <img src={logoPeronio} alt="logoPeronio" className="logoPeronio" />
       </div>
 
-      <img src={welcomeSun} alt="welcomeSun" className="welcomeSun" />
       <div className="welcomeContainer">
         <img
           src={welcomeContainer}
           alt="welcomeContainer"
           className="welcomeContainerImage"
         />
-        <img
-          src={welcomeImageSpikes}
-          alt="welcomeImageSpikes"
-          className="welcomeImageSpikes"
-        />
+
         <div className="container-text">
-          <p className="welcomeContainerText">Usar Peronio </p>
-          <p className="welcomeContainerText"> Te va a llevar un total de</p>
+          <p className="welcomeContainerText">
+            Usar Peronio <br /> Te va a llevar un total de
+          </p>
+
           <img
             src={welcomeCircle}
             alt="welcomeCircle"
@@ -60,23 +59,33 @@ export default function Welcome({handleClickNext, setIsApple}: any) {
             <br />
             EN TU TELEFONO
           </p>
-        </div>
 
-        <img
-          src={welcomeContenButtons}
-          alt="welcomeContenButtons"
-          className="welcomeContenButtons"
-        />
-        <img
-          src={welcomeButtons}
-          alt="welcomeButtons"
-          className="welcomeButtons"
-        />
+          <img
+            src={welcomeContentButtons}
+            alt="welcomeContentButtons"
+            className="welcomeContentButtons"
+          />
+        </div>
       </div>
-      <div className="welcomeButtonAction">
-        <button onClick={handleClickAppStore}></button>
-        <button onClick={handleClickGooglePlay}></button>
+
+      <div className="welcomeContainerButtons">
+        <button onClick={handleClickAppStore}>
+          <img
+            src={welcomeAppStore}
+            alt="welcomeAppStore"
+            className="welcomeAppStore"
+          />
+        </button>
+        <button onClick={handleClickGooglePlay}>
+          <img
+            src={welcomeAndroid}
+            alt="welcomeAppStore"
+            className="welcomeAppStore"
+          />
+        </button>
       </div>
+
+      <img src={welcomeSun} alt="welcomeSun" className="welcomeSun" />
       <img src={welcomePeople} alt="welcomePeople" className="welcomePeople" />
     </div>
   );
