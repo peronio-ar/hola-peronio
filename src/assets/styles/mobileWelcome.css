@@ -1,6 +1,5 @@
 .mobileWelcomeContainer {
-  height: 100%;
-  border: 1px solid red;
+  height: 100vh;
   box-sizing: border-box;
   position: relative;
   width: 100vw;
