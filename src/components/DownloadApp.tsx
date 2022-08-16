@@ -25,7 +25,7 @@ export default function DownloadApp({handleClickNext, counter, isApple}: any) {
           className="navIconLogo"
         />
         <div className="navIconReloj">
-          <Counter counterNumber={counter} />
+          <Counter gold counterNumber={counter} />
         </div>
       </div>
       <div className="DownloadContent">

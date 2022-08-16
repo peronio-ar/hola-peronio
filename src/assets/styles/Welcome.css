@@ -203,7 +203,8 @@
   width: 630px;
   height: 140px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
   align-items: center;
 
   position: absolute;
@@ -212,7 +213,6 @@
   margin: auto;
   padding-top: 370px;
   z-index: 105;
-  border: 1px solido red;
 }
 .welcomeContentButtons {
   width: 630px;
@@ -230,6 +230,7 @@
 
   height: auto;
   height: 80px;
+  margin: 0px 30px;
 }
 .welcomeContainerButtons button img {
   width: 230px;

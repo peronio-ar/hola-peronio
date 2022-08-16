@@ -1,15 +1,18 @@
 import React from "react";
 import counter from "../assets/images/counter.svg";
+import counterGold from "../assets/images/counterGold.svg";
 import counterBlack from "../assets/images/counterBlack.svg";
 
 interface props {
   counterNumber: number;
   activeBlack?: boolean;
+  gold?: boolean;
 }
 
 export default function Counter({
   counterNumber = 1,
   activeBlack = false,
+  gold = false,
 }: props) {
   return (
     <div className="counter">
@@ -18,10 +21,14 @@ export default function Counter({
       <div className="card">
         <div className="percent">
           <svg>
-            <circle cx="50" cy="50" r="45"></circle>
             <circle
-              cx="50"
-              cy="50"
+              cx={`${gold ? "51" : "50"}`}
+              cy={`${gold ? "49" : "50"}`}
+              r="45"
+            ></circle>
+            <circle
+              cx={`${gold ? "51" : "50"}`}
+              cy={`${gold ? "49" : "50"}`}
               r="45"
               style={{
                 strokeDashoffset: `calc(360px - ${4.7 * counterNumber}px)`,
@@ -32,7 +39,7 @@ export default function Counter({
       </div>
 
       <img
-        src={activeBlack ? counterBlack : counter}
+        src={activeBlack ? counterBlack : gold ? counterGold : counter}
         alt="DownloadReloj"
         className="navIconReloj"
       />

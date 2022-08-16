@@ -36,7 +36,7 @@ export default function CreateWallet({handleClickNext, counter}: any) {
       </div>
 
       <div className="ContainerButtons">
-        <p className="contentButtonText">Abri la aplicacion y toca</p>
+        <p className="contentButtonText">Abrí la aplicación y tocá</p>
         <button className="contentButtonTextCapture">
           CREAR NUEVO MONEDERO
         </button>

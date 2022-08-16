@@ -19,30 +19,12 @@ export default function FinishWallet({handleClickNext, counter}: any) {
       <div className="finishWalletContent">
         <p className="finishWalletContentText">¡Listo!</p>
 
-        <div className="counterTextFinish" style={{color: "white"}}>
-          {counter}
-        </div>
-
-        <div className="cardFinish">
-          <div className="percent">
-            <svg>
-              <circle
-                cx="110"
-                cy="108"
-                r="93"
-                style={{stroke: "white"}}
-              ></circle>
-              <circle
-                cx="110"
-                cy="108"
-                r="93"
-                style={{
-                  strokeDashoffset: `calc(680px - ${9.8 * counter}px)`,
-                }}
-              ></circle>
-            </svg>
+        <div className="piechart">
+          <div className="counterTextFinish" style={{color: "white"}}>
+            {counter}
           </div>
         </div>
+
         <img
           src={CounterFinishWallet}
           alt="FinishWalletFondo"
