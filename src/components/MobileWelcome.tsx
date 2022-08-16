@@ -2,8 +2,10 @@ import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcomeM
 import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
 import mobileWelcomePerson from "../assets/images/MobileWelcome/mobileWelcomePerson.svg";
 export default function MobileWelcome({handleClickNext}: any) {
-  const handleClickButton = () => {
+  const handleClickButton = async () => {
     let navegador = navigator.userAgent;
+
+    await alert("Acordate de volver a esta web");
 
     if (/android/i.test(navegador))
       window.location.href =
