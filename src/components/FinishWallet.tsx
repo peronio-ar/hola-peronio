@@ -1,10 +1,10 @@
 import FinishWalletFondo from "../assets/images/FinishWallet/FinishWalletFondo.svg";
 import CounterFinishWallet from "../assets/images/FinishWallet/CounterFinishWallet.svg";
-import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
+import {Element} from "react-scroll";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 export default function FinishWallet({handleClickNext, counter}: any) {
   return (
-    <div className="finishWalletBackground">
+    <Element name="finishWallet" className="finishWalletBackground">
       <img
         src={LogoPeronio}
         alt="createLogoPeronio"
@@ -19,7 +19,14 @@ export default function FinishWallet({handleClickNext, counter}: any) {
       <div className="finishWalletContent">
         <p className="finishWalletContentText">¡Listo!</p>
 
-        <div className="piechart">
+        <div
+          className="piechart"
+          style={{
+            backgroundImage: `conic-gradient(#ec2929 ${
+              (360 * counter) / 60
+            }deg, transparent 0)`,
+          }}
+        >
           <div className="counterTextFinish" style={{color: "white"}}>
             {counter}
           </div>
@@ -35,21 +42,6 @@ export default function FinishWallet({handleClickNext, counter}: any) {
           CONTINUAR
         </p>
       </div>
-      <div className="contentBarra">
-        <div className="FinisWalletInnerBara">.</div>
-        <img src={downloadCar2} alt="downloadCar2" className="downloadCar5" />
-
-        <div className="circleOfBarra">
-          <div className="FinishWalletCircleBlack">.</div>
-          <div className="FinishWalletCircleBlack">.</div>
-          <div className="FinishWalletCircleBlack">.</div>
-          <div className="FinishWalletCircleBlack">.</div>
-        </div>
-
-        <p className="finishWalletFooterText">
-          <strong>“...¡Sos el primer trabajador!”</strong>
-        </p>
-      </div>
-    </div>
+    </Element>
   );
 }

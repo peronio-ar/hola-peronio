@@ -4,9 +4,10 @@ import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.
 import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.svg";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
+import {Element} from "react-scroll";
 export default function ReadyScreen() {
   return (
-    <div className="readyScreen">
+    <Element name="readyScreen" className="readyScreen">
       <img
         src={LogoPeronio}
         alt="createLogoPeronio"
@@ -52,6 +53,6 @@ export default function ReadyScreen() {
           Es equivalente a un CBU <br /> en el mundo cryto
         </p>
       </div>
-    </div>
+    </Element>
   );
 }

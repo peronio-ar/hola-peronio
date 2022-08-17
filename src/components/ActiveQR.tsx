@@ -1,16 +1,15 @@
 import activeQRfondo from "../assets/images/ActiveQR/ActiveQRFondo.svg";
 import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.svg";
 
-import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
-import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.svg";
+import {Element} from "react-scroll";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 import Counter from "./Counter";
 import {useEffect} from "react";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
 
-export default function Configure({handleClickNext, counter}: any) {
+export default function Configure({step, handleClickNext, counter}: any) {
   return (
-    <div className="ActiveQRBackground">
+    <Element name="activeQr" className="ActiveQRBackground">
       <img src={activeQRfondo} alt="activeQRfondo" className="activeQRfondo" />
 
       <img
@@ -40,7 +39,7 @@ export default function Configure({handleClickNext, counter}: any) {
         <ConnectButton.Custom>
           {({openConnectModal, account}) => {
             useEffect(() => {
-              if (account) handleClickNext();
+              if (account && step === 4) handleClickNext();
             }, [account]);
             return (
               <>
@@ -61,18 +60,6 @@ export default function Configure({handleClickNext, counter}: any) {
           }}
         </ConnectButton.Custom>
       </div>
-
-      <div className="contentBarra">
-        <img src={downloadCar2} alt="downloadCar2" className="downloadCar4" />
-        <div className="ContentInnerBara2">.</div>
-
-        <div className="circleOfBarra">
-          <div className="FinishWalletCircleBlack">.</div>
-          <div className="FinishWalletCircleBlack">.</div>
-          <div className="FinishWalletCircleBlack">.</div>
-          <img src={downloadIcon} alt="downloadIcon" />
-        </div>
-      </div>
-    </div>
+    </Element>
   );
 }

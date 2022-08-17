@@ -111,13 +111,16 @@
 }
 
 .contentBarra {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   bottom: 40px;
   background-color: #ed3432;
   height: 15px;
   width: 90%;
   max-width: 500px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 
   border-radius: 10px;
 }
@@ -128,6 +131,7 @@
   width: 35%;
   background-color: #1b262c;
   border-radius: 10px;
+  transition: all 1s;
 }
 .ContentInnerBara2 {
   position: absolute;
@@ -147,15 +151,7 @@
   align-items: center;
   width: 100%;
 }
-.circleOfBarra {
-  position: absolute;
-  z-index: 120;
-  height: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
+
 .downloadCircleBlack {
   width: 35px;
   height: 35px;
@@ -185,39 +181,17 @@
   bottom: -10px;
   left: -50px;
   width: 150px;
-}
-.downloadCar3 {
-  position: absolute;
-  z-index: 160;
-  bottom: -10px;
-  left: 80px;
-  width: 150px;
-}
-.downloadCar4 {
-  position: absolute;
-  z-index: 160;
-  bottom: -10px;
-  left: 230px;
-  width: 150px;
-}
-.downloadCar5 {
-  position: absolute;
-  z-index: 160;
-  bottom: -10px;
-  right: -50px;
-  width: 150px;
+  transition: all 1s;
 }
 
 @media screen and (max-width: 768px) {
   .contentBarra {
     bottom: 100px;
+    width: 90%;
   }
 }
-@media screen and (max-width: 500px) {
-  .downloadCar3 {
-    left: 30px;
-  }
-  .downloadCar4 {
-    left: 140px;
+@media screen and (max-width: 1080px) {
+  .removeBarra {
+    display: none;
   }
 }

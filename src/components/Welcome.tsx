@@ -9,7 +9,9 @@ import welcomeAppStore from "../assets/images/ImagesWelcome/welcomeAppStore.svg"
 import welcomeAndroid from "../assets/images/ImagesWelcome/welcomeAndroid.svg";
 
 import welcomeCircle from "../assets/images/ImagesWelcome/welcomeCircle.svg";
-export default function Welcome({ handleClickNext, setIsApple }: any) {
+import {Element} from "react-scroll";
+
+export default function Welcome({handleClickNext, setIsApple}: any) {
   const handleClickAppStore = () => {
     handleClickNext();
     setIsApple(true);
@@ -20,7 +22,7 @@ export default function Welcome({ handleClickNext, setIsApple }: any) {
   };
 
   return (
-    <div className="welcomeBackground">
+    <Element name="welcome" className="welcomeBackground">
       <img
         src={backgroundWelcome}
         alt="backgroundWelcome"
@@ -87,6 +89,6 @@ export default function Welcome({ handleClickNext, setIsApple }: any) {
 
       <img src={welcomeSun} alt="welcomeSun" className="welcomeSun" />
       <img src={welcomePeople} alt="welcomePeople" className="welcomePeople" />
-    </div>
+    </Element>
   );
 }

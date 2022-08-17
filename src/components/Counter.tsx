@@ -16,27 +16,17 @@ export default function Counter({
 }: props) {
   return (
     <div className="counter">
-      <div className="counterText">{counterNumber}</div>
-
-      <div className="card">
-        <div className="percent">
-          <svg>
-            <circle
-              cx={`${gold ? "51" : "50"}`}
-              cy={`${gold ? "49" : "50"}`}
-              r="45"
-            ></circle>
-            <circle
-              cx={`${gold ? "51" : "50"}`}
-              cy={`${gold ? "49" : "50"}`}
-              r="45"
-              style={{
-                strokeDashoffset: `calc(360px - ${4.7 * counterNumber}px)`,
-              }}
-            ></circle>
-          </svg>
-        </div>
+      <div
+        className={`piechartCounter ${gold && "pieGold"}`}
+        style={{
+          backgroundImage: `conic-gradient(#ec2929 ${
+            (360 * counterNumber) / 60
+          }deg, transparent 0)`,
+        }}
+      >
+        {" "}
       </div>
+      <div className="counterText">{counterNumber}</div>
 
       <img
         src={activeBlack ? counterBlack : gold ? counterGold : counter}

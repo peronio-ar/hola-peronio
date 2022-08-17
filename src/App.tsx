@@ -9,14 +9,13 @@ import FinishWallet from "./components/FinishWallet";
 import ReadyScreen from "./components/ReadyScreen";
 import MobileWelcome from "./components/MobileWelcome";
 import DownloadAppMobile from "./components/DownloadAppMobile";
-import {Buffer} from "buffer";
 import "@rainbow-me/rainbowkit/styles.css";
 
 import {getDefaultWallets, RainbowKitProvider} from "@rainbow-me/rainbowkit";
 import {chain, configureChains, createClient, WagmiConfig} from "wagmi";
-import {alchemyProvider} from "wagmi/providers/alchemy";
 import {publicProvider} from "wagmi/providers/public";
-
+import Wizzard from "./components/Wizzard";
+import {scroller, Element} from "react-scroll";
 const {chains, provider} = configureChains(
   [chain.mainnet, chain.polygon],
   [publicProvider()]
@@ -40,10 +39,24 @@ function App() {
   const [intervalIdG, setIntervalIdG] = useState(null);
   const [isApple, setIsApple] = useState(false);
 
+  const stepName = {
+    1: "welcome",
+    2: "downloadApp",
+    3: "createWallet",
+    4: "activeQr",
+    5: "finishWallet",
+    6: "readyScreen",
+  };
+
   const handleClickNext = () => {
     if (!activeCounter) setActiveCounter(true);
 
     if (step === 4 && intervalIdG) clearInterval(intervalIdG);
+
+    scroller.scrollTo(stepName[step + 1], {
+      duration: 500,
+      smooth: true,
+    });
     setStep((prevState) => prevState + 1);
   };
   const handleClickBack = () => {
@@ -67,12 +80,22 @@ function App() {
     };
   }, [activeCounter]);
 
+  const goBack = (step: number) => {
+    scroller.scrollTo(stepName[step], {
+      duration: 500,
+      smooth: true,
+    });
+  };
+
+  window.onresize = () => {
+    goBack(step);
+  };
 
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
-        <div className="App">
-          {step === 1 && (
+        <div className="container-app">
+          {step > 0 && (
             <>
               <Welcome
                 setIsApple={setIsApple}
@@ -82,31 +105,33 @@ function App() {
             </>
           )}
 
-          {step === 2 && (
+          {step > 0 && (
             <>
-              <DownloadApp
-                isApple={isApple}
-                counter={counter}
-                handleClickNext={handleClickNext}
-              />
               <DownloadAppMobile
                 handleClickBack={handleClickBack}
                 handleClickNext={handleClickNext}
               />
             </>
           )}
+          <DownloadApp
+            isApple={isApple}
+            counter={counter}
+            handleClickNext={handleClickNext}
+          />
 
-          {step === 3 && (
-            <CreateWallet counter={counter} handleClickNext={handleClickNext} />
-          )}
+          <CreateWallet counter={counter} handleClickNext={handleClickNext} />
 
-          {step === 4 && (
-            <ActiveQR counter={counter} handleClickNext={handleClickNext} />
-          )}
-          {step === 5 && (
-            <FinishWallet counter={counter} handleClickNext={handleClickNext} />
-          )}
-          {step === 6 && <ReadyScreen />}
+          <ActiveQR
+            step={step}
+            counter={counter}
+            handleClickNext={handleClickNext}
+          />
+
+          <FinishWallet counter={counter} handleClickNext={handleClickNext} />
+
+          <ReadyScreen />
+
+          {step > 1 && step < 6 && <Wizzard step={step} />}
         </div>
       </RainbowKitProvider>
     </WagmiConfig>

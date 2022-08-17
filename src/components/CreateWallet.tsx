@@ -3,14 +3,12 @@ import CreateWalletFondo from "../assets/images/CreateWallet/CreateWalletFondo.s
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 import createWalletBarra from "../assets/images/Captures/Capture1Screen3.svg";
 
-import downloadCar2 from "../assets/images/ImagesDownloadApp/downloadCar2.svg";
-import downloadIcon from "../assets/images/ImagesDownloadApp/downloadIcon.svg";
-
+import {Element} from "react-scroll";
 import Counter from "./Counter";
 
 export default function CreateWallet({handleClickNext, counter}: any) {
   return (
-    <div className="createWalletBackground">
+    <Element name="createWallet" className="createWalletBackground">
       <img
         src={CreateWalletFondo}
         alt="CreateWalletFondo"
@@ -45,18 +43,6 @@ export default function CreateWallet({handleClickNext, counter}: any) {
       <div onClick={handleClickNext} className="contentButton">
         LISTO
       </div>
-
-      <div className="contentBarra">
-        <img src={downloadCar2} alt="downloadCar2" className="downloadCar3" />
-        <div className="ContentInnerBara">.</div>
-
-        <div className="circleOfBarra">
-          <div className="FinishWalletCircleBlack">.</div>
-          <div className="FinishWalletCircleBlack">.</div>
-          <img src={downloadIcon} alt="downloadIcon" />
-          <img src={downloadIcon} alt="downloadIcon" />
-        </div>
-      </div>
-    </div>
+    </Element>
   );
 }
