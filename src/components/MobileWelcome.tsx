@@ -1,11 +1,17 @@
 import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcomeMobile.svg";
 import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
 import mobileWelcomePerson from "../assets/images/MobileWelcome/mobileWelcomePerson.svg";
+import {scroller} from "react-scroll";
 export default function MobileWelcome({handleClickNext}: any) {
   const handleClickButton = async () => {
     let navegador = navigator.userAgent;
 
     handleClickNext();
+
+    scroller.scrollTo("downloadAppMobile", {
+      duration: 500,
+      smooth: true,
+    });
 
     setTimeout(async () => {
       await alert("Acordate de volver a esta web");

@@ -1,15 +1,17 @@
 import React from "react";
 import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
 import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcomeMobile.svg";
-import FondoDowloadAppMobile from "../assets/images/DownloadAppMobile/FondoDowloadAppMobile.png";
-import ButtonDownloadApp from "../assets/images/DownloadAppMobile/ButtonDownloadApp.png";
 
+import {Element} from "react-scroll";
 export default function DownloadAppMobile({
   handleClickBack,
   handleClickNext,
 }: any) {
   return (
-    <div className="mobileWelcomeContainer mobileWelcome">
+    <Element
+      name="downloadApp"
+      className="mobileWelcomeContainer mobileWelcome"
+    >
       <img
         src={backgroundWelcome}
         alt="backgroundWelcome"
@@ -46,6 +48,6 @@ export default function DownloadAppMobile({
           
         </div>
       </div> */}
-    </div>
+    </Element>
   );
 }

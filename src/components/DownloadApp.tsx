@@ -11,7 +11,7 @@ import Counter from "./Counter";
 import {Element} from "react-scroll";
 export default function DownloadApp({handleClickNext, counter, isApple}: any) {
   return (
-    <Element name="downloadApp" className="DownloadAppBackgorund">
+    <Element name="downloadAppMobile" className="DownloadAppBackgorund">
       <img
         src={DownloadAppFondo}
         alt="DownloadAppFondo"
