@@ -6,14 +6,17 @@ export default function MobileWelcome({handleClickNext}: any) {
     let navegador = navigator.userAgent;
 
     handleClickNext();
-    await alert("Acordate de volver a esta web");
 
-    if (/android/i.test(navegador))
-      window.location.href =
-        "https://play.google.com/store/apps/details?id=io.stormbird.wallet&hl=en_us";
-    else
-      window.location.href =
-        "https://apps.apple.com/us/app/alphawallet-eth-wallet/id1358230430";
+    setTimeout(async () => {
+      await alert("Acordate de volver a esta web");
+
+      if (/android/i.test(navegador))
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=io.stormbird.wallet&hl=en_us";
+      else
+        window.location.href =
+          "https://apps.apple.com/us/app/alphawallet-eth-wallet/id1358230430";
+    }, 500);
   };
 
   return (
