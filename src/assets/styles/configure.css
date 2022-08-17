@@ -55,6 +55,8 @@
   top: 6px;
   font-size: 40px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
+
 }
 
 .activeQRTime {
@@ -78,10 +80,11 @@
 .activeQRContentParraf {
   color: #1b262c;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   margin-top: 0px;
+  line-height: 28px;
 }
 .ActiveQRButton {
   cursor: pointer;
@@ -101,4 +104,11 @@
   padding: 0px;
   color: #0b4d76;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width:400px){
+  .downloadIcon{
+    width: 30%;
+    border: 2px solid red;
+  }
 }

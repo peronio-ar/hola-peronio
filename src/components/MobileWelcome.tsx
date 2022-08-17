@@ -1,7 +1,7 @@
 import backgroundWelcome from "../assets/images/ImagesWelcome/backgroundWelcomeMobile.svg";
 import logoPeronio from "../assets/images/ImagesWelcome/LogoPeronio.svg";
 import mobileWelcomePerson from "../assets/images/MobileWelcome/mobileWelcomePerson.svg";
-export default function MobileWelcome({handleClickNext}: any) {
+export default function MobileWelcome({ handleClickNext }: any) {
   const handleClickButton = async () => {
     let navegador = navigator.userAgent;
 
@@ -19,17 +19,24 @@ export default function MobileWelcome({handleClickNext}: any) {
 
   return (
     <div className="mobileWelcomeContainer mobileWelcome">
+      <div className="contenedorImagendefondo">
+        <img
+          src={backgroundWelcome}
+          alt="backgroundWelcome"
+          className="backgroundImageMobile"
+        /></div>
+
       <img
-        src={backgroundWelcome}
-        alt="backgroundWelcome"
-        className="backgroundImageMobile"
+        src={logoPeronio}
+        alt="logoPeronio"
+        className="logoPeronioMobile"
       />
       <div className="containerMobile">
-        <img
+        {/*  <img
           src={logoPeronio}
           alt="logoPeronio"
           className="logoPeronioMobile"
-        />
+        /> */}
 
         <div className="contentMobileWelcome">
           <div className="contentTextMobile">

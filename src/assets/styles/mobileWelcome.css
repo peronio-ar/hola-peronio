@@ -1,29 +1,46 @@
 .mobileWelcomeContainer {
-  height: 100vh;
   box-sizing: border-box;
-  position: relative;
-  width: 100vw;
+  width: 100%;
+ height: 100%;
+ position: relative;
   overflow: hidden;
   background: rgb(27, 38, 44);
 }
-
-.backgroundImageMobile {
+.contenedorImagendeFondo{
+  width: 50%;
+  height: 100%;
   position: absolute;
 
-  width: 100%;
+}
+.contenedorImagendeFondo img{
+  margin: 0;
+  width: 100%;    
+  height: 100%; 
+  position: relative;
 }
 
-.logoPeronioMobile {
-  max-width: 361px;
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 40px;
+/* .backgroundImageMobile {
+  position: absolute;
+  width: 100%;
 }
-.logoPeronioMobile {
+ */
+
+
+/* .logoPeronioMobile {
   max-width: 361px;
   width: 50%;
   margin: 0 auto;
   padding-top: 40px;
+} */
+
+.logoPeronioMobile{
+  position: absolute;
+  z-index: 111;
+  width: 30%;
+  top: 30px;
+  left: 0;
+  right: 0;
+   margin: 0 auto;
 }
 .welcomeContainerMobile {
   width: 400px;
@@ -37,9 +54,12 @@
 }
 
 .containerMobile {
-  position: relative;
-  z-index: 101;
+  position: absolute;
+  z-index: 111;
+  top: 110px;
   text-align: center;
+  width: 100%;
+  margin-top: 90px;
 }
 .welcomeMobileTitle {
   color: #fcf7f2;
@@ -70,6 +90,7 @@
   z-index: 120;
   width: 250px;
   top: -10px;
+  
 }
 
 .WelcomeMobileButton {
@@ -107,6 +128,7 @@
   position: relative;
   min-height: 600px;
   padding-top: 20px;
+  margin-top: -40px;
 }
 .contentTextMobile {
   position: relative;
