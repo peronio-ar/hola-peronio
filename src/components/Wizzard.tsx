@@ -37,11 +37,16 @@ export default function Wizzard({step}: Props) {
         className="downloadCar2"
         style={{
           left: `${
-            screen.width > 450 ? position[step] : positionResponsive[step]
+            screen.width > 450
+              ? position[step as keyof typeof position]
+              : positionResponsive[step as keyof typeof positionResponsive]
           }%`,
         }}
       />
-      <div className="ContentInnerBara" style={{width: `${width[step]}%`}}>
+      <div
+        className="ContentInnerBara"
+        style={{width: `${width[step as keyof typeof width]}%`}}
+      >
         .
       </div>
       <div className="circleOfBarra">

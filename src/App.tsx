@@ -53,7 +53,7 @@ function App() {
 
     if (step === 4 && intervalIdG) clearInterval(intervalIdG);
 
-    scroller.scrollTo(stepName[step + 1], {
+    scroller.scrollTo(stepName[(step + 1) as keyof typeof stepName], {
       duration: 500,
       smooth: true,
     });
@@ -81,7 +81,7 @@ function App() {
   }, [activeCounter]);
 
   const goBack = (step: number) => {
-    scroller.scrollTo(stepName[step], {
+    scroller.scrollTo(stepName[step as keyof typeof stepName], {
       duration: 500,
       smooth: true,
     });
