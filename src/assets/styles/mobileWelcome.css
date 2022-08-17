@@ -1,16 +1,14 @@
 .mobileWelcomeContainer {
   height: 100vh;
-  border: 1px solid red;
   box-sizing: border-box;
   position: relative;
   width: 100vw;
   overflow: hidden;
-  background: rgb(27, 38, 44);
+  background: rgba(20, 33, 40, 1);
 }
 
 .backgroundImageMobile {
   position: absolute;
-
   width: 100%;
 }
 
@@ -194,10 +192,10 @@
   } */
 }
 @media (max-width: 568px) {
-  .backgroundImageMobile {
+  /* .backgroundImageMobile {
     height: 100%;
     width: auto;
-  }
+  } */
   .welcomePinkContent {
     height: 60px;
   }
