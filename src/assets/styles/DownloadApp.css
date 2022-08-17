@@ -186,7 +186,7 @@
 
 @media screen and (max-width: 768px) {
   .contentBarra {
-    bottom: 100px;
+    bottom: 60px;
     width: 90%;
   }
 }
