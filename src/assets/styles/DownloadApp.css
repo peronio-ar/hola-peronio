@@ -208,6 +208,11 @@
   width: 150px;
 }
 
+@media screen and (max-width: 768px) {
+  .contentBarra {
+    bottom: 100px;
+  }
+}
 @media screen and (max-width: 500px) {
   .downloadCar3 {
     left: 30px;

@@ -43,6 +43,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .readyScreen {
+    min-height: auto;
+  }
+}
+
 .finishScreenContent {
   position: absolute;
   z-index: 100;
