@@ -18,6 +18,12 @@
   top: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .ActiveQRBackground {
+    min-height: auto;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .activeQRfondo {
     width: 100%;
@@ -56,7 +62,6 @@
   font-size: 40px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-
 }
 
 .activeQRTime {
@@ -106,8 +111,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media (max-width:400px){
-  .downloadIcon{
+@media (max-width: 400px) {
+  .downloadIcon {
     width: 30%;
     border: 2px solid red;
   }

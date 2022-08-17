@@ -19,6 +19,12 @@
   top: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .finishWalletBackground {
+    min-height: auto;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .FinishWalletFondo {
     width: 100%;

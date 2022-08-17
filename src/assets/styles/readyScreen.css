@@ -38,6 +38,9 @@
   .readyScreenBarraVertical {
     display: none;
   }
+  .readyScreen {
+    min-height: auto;
+  }
 }
 
 .finishScreenContent {
