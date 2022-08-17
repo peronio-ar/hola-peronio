@@ -5,6 +5,7 @@ export default function MobileWelcome({handleClickNext}: any) {
   const handleClickButton = async () => {
     let navegador = navigator.userAgent;
 
+    handleClickNext();
     await alert("Acordate de volver a esta web");
 
     if (/android/i.test(navegador))
@@ -13,8 +14,6 @@ export default function MobileWelcome({handleClickNext}: any) {
     else
       window.location.href =
         "https://apps.apple.com/us/app/alphawallet-eth-wallet/id1358230430";
-
-    handleClickNext();
   };
 
   return (
