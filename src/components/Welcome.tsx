@@ -9,7 +9,7 @@ import welcomeAppStore from "../assets/images/ImagesWelcome/welcomeAppStore.svg"
 import welcomeAndroid from "../assets/images/ImagesWelcome/welcomeAndroid.svg";
 
 import welcomeCircle from "../assets/images/ImagesWelcome/welcomeCircle.svg";
-export default function Welcome({handleClickNext, setIsApple}: any) {
+export default function Welcome({ handleClickNext, setIsApple }: any) {
   const handleClickAppStore = () => {
     handleClickNext();
     setIsApple(true);
