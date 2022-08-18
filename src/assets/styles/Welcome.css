@@ -33,7 +33,7 @@
   top: 0px;
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1200px) {
   .backgroundImage {
     width: 100%;
 
