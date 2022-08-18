@@ -62,6 +62,13 @@ function App() {
   const handleClickBack = () => {
     setStep((prevState) => prevState - 1);
   };
+
+  useEffect(() => {
+    scroller.scrollTo("welcome", {
+      duration: 500,
+      smooth: true,
+    });
+  }, []);
   useEffect(() => {
     let intervalId: any;
     if (activeCounter) {
@@ -95,24 +102,14 @@ function App() {
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <div className="container-app">
-          {step > 0 && (
-            <>
-              <Welcome
-                setIsApple={setIsApple}
-                handleClickNext={handleClickNext}
-              />
-              <MobileWelcome handleClickNext={handleClickNext} />
-            </>
-          )}
+          <Welcome setIsApple={setIsApple} handleClickNext={handleClickNext} />
+          <MobileWelcome handleClickNext={handleClickNext} />
 
-          {step > 0 && (
-            <>
-              <DownloadAppMobile
-                handleClickBack={handleClickBack}
-                handleClickNext={handleClickNext}
-              />
-            </>
-          )}
+          <DownloadAppMobile
+            handleClickBack={handleClickBack}
+            handleClickNext={handleClickNext}
+          />
+
           <DownloadApp
             isApple={isApple}
             counter={counter}
