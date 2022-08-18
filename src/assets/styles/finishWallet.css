@@ -185,10 +185,21 @@
   left: 0px;
   right: 0px;
   margin: auto;
-  bottom: -30px;
+  bottom: -34px;
   display: block;
-  width: 130px;
-  height: 130px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
   background-image: conic-gradient(#ec2929 270deg, transparent 0);
+}
+
+@media screen and (max-width: 600px) {
+  .finishWalletContentTitle {
+    max-width: 300px;
+  }
+  .piechart {
+
+    bottom: -5px;
+  
+  }
 }
