@@ -102,7 +102,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   max-width: 680px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   /* min-height: 600px; */
@@ -151,10 +151,10 @@
   bottom: 0px;
   top: 0px;
   margin: auto;
-  left: 0px;
-  max-width: 300px;
+  left: 80px;
+  max-width: 200px;
   width: 45%;
-  padding-top: 210px;
+  padding-top: 295px;
 }
 
 .welcomeContainerTextWalletMobile {
@@ -248,18 +248,13 @@
   }
 
   .mobileWelcomePerson {
-    position: absolute;
-    bottom: 0px;
-    top: 0px;
-    margin: auto;
-    left: 0px;
-    max-width: 300px;
-    width: 45%;
-    padding-top: 280px;
+    padding-top: 180px;
+    left: -20px;
   }
 }
 @media (max-width: 450px) {
   .mobileWelcomePerson {
-    padding-top: 220px;
+    padding-top: 210px;
+    left: -20px;
   }
 }
