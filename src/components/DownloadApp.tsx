@@ -1,4 +1,4 @@
-import DownloadAppFondo from "../assets/images/ImagesDownloadApp/DownloadAppFondo.svg";
+import DownloadAppFondo from "../assets/images/ImagesDownloadApp/DownloadAppFondo2.svg";
 import LogoPeronioWhite from "../assets/images/ImagesDownloadApp/logoPeronioWhite.svg";
 
 import DownloadBarcode from "../assets/images/ImagesDownloadApp/DownloadBarcode.svg";

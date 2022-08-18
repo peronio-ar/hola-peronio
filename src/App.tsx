@@ -34,6 +34,7 @@ const wagmiClient = createClient({
 
 function App() {
   const [step, setStep] = useState(1);
+  const [disableScreen, setDisableScreen] = useState(1);
   const [counter, setCounter] = useState(0);
   const [activeCounter, setActiveCounter] = useState(false);
   const [intervalIdG, setIntervalIdG] = useState(null);
@@ -49,6 +50,7 @@ function App() {
   };
 
   const handleClickNext = () => {
+    console.log("tested");
     if (!activeCounter) setActiveCounter(true);
 
     if (step === 4 && intervalIdG) clearInterval(intervalIdG);
@@ -57,7 +59,11 @@ function App() {
       duration: 500,
       smooth: true,
     });
+
     setStep((prevState) => prevState + 1);
+    setTimeout(() => {
+      setDisableScreen((prevState) => prevState + 1);
+    }, 1000);
   };
   const handleClickBack = () => {
     setStep((prevState) => prevState - 1);
@@ -102,29 +108,45 @@ function App() {
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <div className="container-app">
-          <Welcome setIsApple={setIsApple} handleClickNext={handleClickNext} />
-          <MobileWelcome handleClickNext={handleClickNext} />
+          {disableScreen < 2 && (
+            <>
+              <Welcome
+                setIsApple={setIsApple}
+                handleClickNext={handleClickNext}
+              />
+              <MobileWelcome handleClickNext={handleClickNext} />
+            </>
+          )}
 
-          <DownloadAppMobile
-            handleClickBack={handleClickBack}
-            handleClickNext={handleClickNext}
-          />
+          {disableScreen < 3 && (
+            <>
+              <DownloadAppMobile
+                handleClickBack={handleClickBack}
+                handleClickNext={handleClickNext}
+              />
+              <DownloadApp
+                isApple={isApple}
+                counter={counter}
+                handleClickNext={handleClickNext}
+              />
+            </>
+          )}
 
-          <DownloadApp
-            isApple={isApple}
-            counter={counter}
-            handleClickNext={handleClickNext}
-          />
+          {disableScreen < 4 && (
+            <CreateWallet counter={counter} handleClickNext={handleClickNext} />
+          )}
 
-          <CreateWallet counter={counter} handleClickNext={handleClickNext} />
+          {disableScreen < 5 && (
+            <ActiveQR
+              step={step}
+              counter={counter}
+              handleClickNext={handleClickNext}
+            />
+          )}
 
-          <ActiveQR
-            step={step}
-            counter={counter}
-            handleClickNext={handleClickNext}
-          />
-
-          <FinishWallet counter={counter} handleClickNext={handleClickNext} />
+          {disableScreen < 6 && (
+            <FinishWallet counter={counter} handleClickNext={handleClickNext} />
+          )}
 
           <ReadyScreen />
 

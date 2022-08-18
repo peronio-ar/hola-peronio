@@ -1,4 +1,4 @@
-import activeQRfondo from "../assets/images/ActiveQR/ActiveQRFondo.svg";
+import activeQRfondo from "../assets/images/ActiveQR/ActiveQRFondo2.svg";
 import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.svg";
 
 import {Element} from "react-scroll";

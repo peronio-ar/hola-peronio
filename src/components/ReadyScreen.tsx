@@ -1,5 +1,5 @@
 import React from "react";
-import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo.svg";
+import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo2.svg";
 import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.svg";
 import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.svg";
 import {ConnectButton} from "@rainbow-me/rainbowkit";

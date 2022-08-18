@@ -1,12 +1,12 @@
 import React from "react";
-import CreateWalletFondo from "../assets/images/CreateWallet/CreateWalletFondo.svg";
+import CreateWalletFondo from "../assets/images/CreateWallet/CreateWalletFondo2.svg";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 import createWalletBarra from "../assets/images/Captures/Capture1Screen3.svg";
 
-import { Element } from "react-scroll";
+import {Element} from "react-scroll";
 import Counter from "./Counter";
 
-export default function CreateWallet({ handleClickNext, counter }: any) {
+export default function CreateWallet({handleClickNext, counter}: any) {
   return (
     <Element name="createWallet" className="createWalletBackground">
       <img
