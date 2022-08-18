@@ -87,7 +87,7 @@
   border: 1px solid #0b4d76;
 
   position: relative;
-  top: 20px;
+  top: 50px;
 }
 
 .mobileWelcomeTextS p {
@@ -105,7 +105,7 @@
   width: 80%;
   margin: 0 auto;
   position: relative;
-  min-height: 600px;
+  /* min-height: 600px; */
   padding-top: 20px;
 }
 .contentTextMobile {
@@ -140,7 +140,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   max-width: 310px;
-  width: 80%;
+  width: 35%;
   height: 250px;
 
   margin: 0 auto;
@@ -154,7 +154,7 @@
   left: 0px;
   max-width: 300px;
   width: 45%;
-  padding-top: 285px;
+  padding-top: 210px;
 }
 
 .welcomeContainerTextWalletMobile {
@@ -188,21 +188,30 @@
     height: 200px;
     margin-top: 40px;
   }
-  /* .mobileWelcomePerson {
-    left: -60px;
-  } */
+
+  .titleButton {
+    top: 20px;
+  }
 }
 @media (max-width: 568px) {
   /* .backgroundImageMobile {
     height: 100%;
     width: auto;
   } */
+  .welcomeContainerTextSMobile {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .welcomeContainerTextWalletMobile {
+    font-size: 14px;
+  }
+
   .welcomePinkContent {
     height: 60px;
   }
-  .welcomeMobileTitle {
+  /* .welcomeMobileTitle {
     padding-top: 40px;
-  }
+  } */
   .welcomeContainerTextS {
     font-size: 12px;
     line-height: 14px;
@@ -213,10 +222,11 @@
   .welcomeMobileTitle {
     font-size: 20px;
     margin-bottom: 10px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
   .contentGreetingText {
     font-size: 14px;
+    line-height: 15px;
   }
   .mobileWelcomeBarraLateral {
     width: 200px;
@@ -228,11 +238,13 @@
   }
   .mobileContainerButtons {
     height: 160px;
-    margin-top: 30px;
+    margin-top: 10px !important;
+    width: 80%;
   }
 
   .contentMobileWelcome {
     width: 95%;
+    padding-bottom: 20px;
   }
 
   .mobileWelcomePerson {
