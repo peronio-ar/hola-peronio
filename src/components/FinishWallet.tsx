@@ -1,8 +1,8 @@
 import FinishWalletFondo from "../assets/images/FinishWallet/FinishWalletFondo.svg";
 import CounterFinishWallet from "../assets/images/FinishWallet/CounterFinishWallet.svg";
-import {Element} from "react-scroll";
+import { Element } from "react-scroll";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
-export default function FinishWallet({handleClickNext, counter}: any) {
+export default function FinishWallet({ handleClickNext, counter }: any) {
   return (
     <Element name="finishWallet" className="finishWalletBackground">
       <img
@@ -22,12 +22,11 @@ export default function FinishWallet({handleClickNext, counter}: any) {
         <div
           className="piechart"
           style={{
-            backgroundImage: `conic-gradient(#ec2929 ${
-              (360 * counter) / 60
-            }deg, transparent 0)`,
+            backgroundImage: `conic-gradient(#ec2929 ${(360 * counter) / 60
+              }deg, transparent 0)`,
           }}
         >
-          <div className="counterTextFinish" style={{color: "white"}}>
+          <div className="counterTextFinish" style={{ color: "white" }}>
             {counter}
           </div>
         </div>

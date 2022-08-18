@@ -1,7 +1,6 @@
 .DownloadAppBackgorund {
   width: 100vw;
   height: 100vh;
-  min-height: 800px;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -70,7 +69,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 420px;
+  width: 250px;
 }
 .DownloadBarcode {
   width: 100%;
@@ -93,7 +92,7 @@
 
 .barcodeButton {
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   color: white;
   width: 100%;
   height: 80px;

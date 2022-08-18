@@ -37,7 +37,7 @@
   width: 13%;
   right: 20px;
   top: 20px;
-  width: 250px;
+  width: 200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -50,7 +50,7 @@
   background-image: url("../images/ActiveQR/ActiveQRBarra.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  width: 300px;
+  width: 260px;
   padding-top: 15px;
 }
 
@@ -59,7 +59,7 @@
   font: 800;
   text-align: center;
   top: 6px;
-  font-size: 40px;
+  font-size: 33px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
@@ -79,13 +79,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .activeQRContentParraf {
   color: #1b262c;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   margin-top: 0px;
@@ -101,10 +101,10 @@
 .contentButtonQr {
   width: 80%;
   margin: 0 auto;
-  height: 67px;
+  height: 60px;
   border: 2px solid #fdcc9f;
   background: rgba(255, 246, 238, 1);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   padding: 0px;
   color: #0b4d76;

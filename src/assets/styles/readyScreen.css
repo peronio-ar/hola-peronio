@@ -43,11 +43,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .readyScreen {
-    min-height: auto;
-  }
-}
+
 
 .finishScreenContent {
   position: absolute;
@@ -63,17 +59,18 @@
 }
 .finishContentText {
   color: #39b54a;
-  font-size: 35px;
+  font-size: 30px;
   margin: 20px 0px;
-  padding-top: 180px;
+  padding-top: 120px;
   line-height: 30px;
   font-family: "Abril Fatface", cursive;
 
   text-align: center;
 }
 .readyScreenButton {
-  width: 350px;
+  width: 300px;
   margin: 0;
+  font-size: 10px;
 }
 .readyScreenText {
   position: absolute;
@@ -103,17 +100,16 @@
 }
 
 .readyScreenTextFinal {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: black;
   font-family: "Roboto", sans-serif;
 }
 
 .readyScreenButton {
-  border: 1px solid red;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #39b54a;
   background: linear-gradient(white 80%, #9ddba6);
   border: 2px solid #39b54a;
@@ -124,7 +120,7 @@
 }
 
 .readyScreenArrow {
-  width: 30px;
+  width: 20px;
 }
 .readyScreenArrowText {
   text-align: center;
@@ -132,5 +128,15 @@
   color: #39b54a;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .readyScreen {
+    min-height: auto;
+  }
+  .finishContentText {
+
+    padding-top: 190px;
+
+  }
 }

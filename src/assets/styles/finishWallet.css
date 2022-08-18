@@ -34,22 +34,22 @@
 }
 
 .finishSunContainer {
-  width: 498px;
-  height: 495px;
+  width: 300px;
+  height: 300px;
   margin-top: 1px;
 }
 .finishWalletContent {
-  position: relative;
+  position: absolute;
+  top: 30px;
   z-index: 100;
   text-align: center;
-  min-height: 600px;
 
-  padding-top: 50px;
+  padding-top: 120px;
 }
 .finishWalletContentText {
   position: absolute;
-  font-size: 50px;
-  padding-top: 50px;
+  font-size: 40px;
+  padding-top: 40px;
   font-weight: bold;
   color: #00b7c2;
   font-family: "Abril Fatface", cursive;
@@ -60,7 +60,7 @@
 
 .finishWalletContentTitle {
   font-size: 40px;
-  position: absolute;
+  position: relative;
   color: #00b7c2;
   line-height: 30px;
   font-family: "Abril Fatface", cursive;
@@ -70,7 +70,7 @@
   right: 0;
   left: 0;
   margin: auto;
-  bottom: 120px;
+  bottom: 40px;
 }
 @media screen and (max-width: 600px) {
   .finishWalletContentTitle {
@@ -121,7 +121,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  font-size: 100px;
+  font-size: 60px;
   color: white;
   justify-content: center;
   align-items: center;
@@ -175,6 +175,7 @@
   border: 2px solid green;
   float: left;
   margin: 1em;
+
 }
 
 .piechart {
@@ -184,11 +185,10 @@
   left: 0px;
   right: 0px;
   margin: auto;
-  bottom: 52px;
-
+  bottom: -30px;
   display: block;
-  width: 220px;
-  height: 220px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background-image: conic-gradient(#ec2929 270deg, transparent 0);
 }
