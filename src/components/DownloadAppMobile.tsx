@@ -9,7 +9,7 @@ export default function DownloadAppMobile({
 }: any) {
   return (
     <Element
-      name="downloadApp"
+      name="downloadAppMobile"
       className="mobileWelcomeContainer mobileWelcome"
     >
       <img
@@ -26,7 +26,7 @@ export default function DownloadAppMobile({
       </div>
 
       <div className="contentMobileDownload">
-        <p className="titleContentDowloadMobile">Ya lo Descargaste</p>
+        <p className="titleContentDowloadMobile">Ya la Descargaste?</p>
         <div className="containerButtonsDownload">
           <p onClick={handleClickNext} className="buttonAnswer-SI">
             SI

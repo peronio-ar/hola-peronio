@@ -69,7 +69,7 @@ export default function Wizzard({step}: Props) {
       </div>
 
       {step === 2 && (
-        <p className="downloadText">"!Peron, Peron, gran conductor! ..."</p>
+        <p className="downloadText">“¡Perón, Perón, gran conductor! ...”</p>
       )}
       {step === 5 && (
         <p className="finishWalletFooterText">

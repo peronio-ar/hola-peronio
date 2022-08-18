@@ -11,7 +11,7 @@ import Counter from "./Counter";
 import {Element} from "react-scroll";
 export default function DownloadApp({handleClickNext, counter, isApple}: any) {
   return (
-    <Element name="downloadAppMobile" className="DownloadAppBackgorund">
+    <Element name="downloadApp" className="DownloadAppBackgorund">
       <img
         src={DownloadAppFondo}
         alt="DownloadAppFondo"
@@ -41,7 +41,7 @@ export default function DownloadApp({handleClickNext, counter, isApple}: any) {
         />
 
         <button onClick={handleClickNext} className="barcodeButton">
-          YA LA DESCARGUE
+          YA LA DESCARGUÉ
           <img src={barcodeLine} alt="barcodeLine" className="barcodeLine" />
         </button>
       </div>
