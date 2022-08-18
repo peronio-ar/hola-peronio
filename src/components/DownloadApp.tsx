@@ -8,8 +8,8 @@ import qrApple from "../assets/images/ImagesDownloadApp/qrApple.svg";
 import qrPlayStore from "../assets/images/ImagesDownloadApp/qrPlayStore.svg";
 import Counter from "./Counter";
 
-import {Element} from "react-scroll";
-export default function DownloadApp({handleClickNext, counter, isApple}: any) {
+import { Element } from "react-scroll";
+export default function DownloadApp({ handleClickNext, counter, isApple }: any) {
   return (
     <Element name="downloadApp" className="DownloadAppBackgorund">
       <img
