@@ -110,6 +110,25 @@
   color: #0b4d76;
   font-family: "Roboto", sans-serif;
 }
+.contentButtonQrText {
+  width: 100%;
+  margin: 0 auto;
+
+  font-size: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  padding-top: 20px;
+  border-radius: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.contentButtonQrText:active {
+  outline: none;
+}
 
 @media (max-width: 400px) {
   .downloadIcon {

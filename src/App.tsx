@@ -50,7 +50,6 @@ function App() {
   };
 
   const handleClickNext = () => {
-    console.log("tested");
     if (!activeCounter) setActiveCounter(true);
 
     if (step === 4 && intervalIdG) clearInterval(intervalIdG);
@@ -66,7 +65,14 @@ function App() {
     }, 1000);
   };
   const handleClickBack = () => {
-    setStep((prevState) => prevState - 1);
+    setDisableScreen((prevState) => prevState - 1);
+    setTimeout(() => {
+      scroller.scrollTo(stepName[(step - 1) as keyof typeof stepName], {
+        duration: 500,
+        smooth: true,
+      });
+      setStep((prevState) => prevState - 1);
+    }, 1000);
   };
 
   useEffect(() => {
