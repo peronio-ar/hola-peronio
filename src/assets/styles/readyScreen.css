@@ -17,7 +17,9 @@
   z-index: 99;
   top: 0px;
 }
-
+.mobileReadyFondo {
+  display: none;
+}
 @media screen and (min-width: 1600px) {
   .readyScreenFondo {
     width: 100%;
@@ -41,9 +43,21 @@
   .readyScreen {
     min-height: auto;
   }
+  .mobileReadyFondo {
+    display: block;
+  }
+  .desktopReadyFondo {
+    display: none;
+  }
 }
-
-
+@media screen and (max-width: 968px) {
+  .mobileReadyFondo {
+    display: block;
+  }
+  .desktopReadyFondo {
+    display: none;
+  }
+}
 
 .finishScreenContent {
   position: absolute;
@@ -135,8 +149,6 @@
     min-height: auto;
   }
   .finishContentText {
-
     padding-top: 190px;
-
   }
 }

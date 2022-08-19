@@ -1,5 +1,6 @@
 import React from "react";
 import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo2.svg";
+import readyScreenFondo3 from "../assets/images/ReadyScreen/readyScreenFondo3.svg";
 import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.svg";
 import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.svg";
 import {ConnectButton} from "@rainbow-me/rainbowkit";
@@ -16,7 +17,12 @@ export default function ReadyScreen() {
       <img
         src={readyScreenFondo}
         alt="readyScreenFondo"
-        className="readyScreenFondo"
+        className="readyScreenFondo desktopReadyFondo"
+      />
+      <img
+        src={readyScreenFondo3}
+        alt="readyScreenFondo"
+        className="readyScreenFondo mobileReadyFondo"
       />
       <img
         src={readyScreenBarraVertical}
