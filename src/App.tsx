@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
@@ -11,17 +11,14 @@ import MobileWelcome from "./components/MobileWelcome";
 import DownloadAppMobile from "./components/DownloadAppMobile";
 import "@rainbow-me/rainbowkit/styles.css";
 
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import { publicProvider } from "wagmi/providers/public";
+import {getDefaultWallets, RainbowKitProvider} from "@rainbow-me/rainbowkit";
+import {chain, configureChains, createClient, WagmiConfig} from "wagmi";
+import {publicProvider} from "wagmi/providers/public";
 import Wizzard from "./components/Wizzard";
-import { scroller, Element } from "react-scroll";
-const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon],
-  [publicProvider()]
-);
+import {scroller, Element} from "react-scroll";
+const {chains, provider} = configureChains([chain.polygon], [publicProvider()]);
 
-const { connectors } = getDefaultWallets({
+const {connectors} = getDefaultWallets({
   appName: "Peronio App",
   chains,
 });
