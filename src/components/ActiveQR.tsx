@@ -7,6 +7,8 @@ import Counter from "./Counter";
 import { useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
+import walletConnectIcon from "../assets/images/wallet-connect.png";
+
 export default function Configure({ isMobile, step, handleClickNext, counter }: any) {
     const [activeButton, setActiveButton] = useState(false);
     return (
@@ -25,7 +27,6 @@ export default function Configure({ isMobile, step, handleClickNext, counter }: 
                 <div className="activeQRBarra">
                     <p className="activeQRContenText">EN LA APP</p>
                 </div>
-
                 <p className="activeQRContentParraf">
                     {isMobile ? (
                         <ul className="activeQRContentMobile">
@@ -37,6 +38,10 @@ export default function Configure({ isMobile, step, handleClickNext, counter }: 
                     ) : (
                         <span>
                             Activá el escaner de QR y <br /> hacé click en Conectar
+                            <div className="walletConnectIcon">
+                                <img src={walletConnectIcon} />
+                                <div>Wallet connect</div>
+                            </div>
                         </span>
                     )}
                 </p>

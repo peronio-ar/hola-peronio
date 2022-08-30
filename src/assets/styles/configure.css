@@ -97,6 +97,18 @@
     font-weight: normal;
 }
 
+.walletConnectIcon {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.walletConnectIcon img {
+    width: 50px;
+    border-radius: 14px;
+}
+
 .ActiveQRButton {
     cursor: pointer;
 }
