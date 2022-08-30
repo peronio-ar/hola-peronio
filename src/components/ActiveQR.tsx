@@ -1,5 +1,5 @@
 import activeQRfondo from "../assets/images/ActiveQR/ActiveQRFondo2.svg";
-import createWalletBarraVertical from "../assets/images/Captures/Capture2Screen4.svg";
+import capture2 from "../assets/images/Captures/capture2.gif";
 import { useState } from "react";
 import { Element } from "react-scroll";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
@@ -17,7 +17,7 @@ export default function Configure({ isMobile, step, handleClickNext, counter }: 
 
             <img src={LogoPeronio} alt="createLogoPeronio" className="createLogoPeronio" />
 
-            <img src={createWalletBarraVertical} alt="createWalletBarraVertical" className="createWalletBarraVertical" />
+            <img src={capture2} alt="createWalletBarraVertical" className="createWalletBarraVertical" />
 
             <div className="activeQRTime">
                 <Counter activeBlack counterNumber={counter} />

@@ -1,7 +1,7 @@
 import React from "react";
 import CreateWalletFondo from "../assets/images/CreateWallet/CreateWalletFondo2.svg";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
-import createWalletBarra from "../assets/images/Captures/Capture1Screen3.svg";
+import capture1 from "../assets/images/Captures/capture1.gif";
 
 import { Element } from "react-scroll";
 import Counter from "./Counter";
@@ -18,7 +18,7 @@ export default function CreateWallet({ handleClickNext, counter }: any) {
                     <Counter counterNumber={counter} />
                 </div>
 
-                <img src={createWalletBarra} alt="createWalletBarra" className="createWalletBarra" />
+                <img src={capture1} alt="createWalletBarra" className="createWalletBarra" />
             </div>
 
             <div className="ContainerButtons">
