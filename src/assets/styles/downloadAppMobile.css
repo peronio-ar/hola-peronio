@@ -1,111 +1,111 @@
 .logoPeronioMobileDownload {
-  position: absolute;
-  top: 80px;
-  width: 30%;
-  z-index: 100;
+    position: absolute;
+    top: 80px;
+    width: 30%;
+    z-index: 100;
 }
 
 .contentMobileDownload {
-  background-image: url("../images/DownloadAppMobile/downloadContainer.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  max-width: 680px;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  min-height: 600px;
-  padding-top: 20px;
+    background-image: url("../images/DownloadAppMobile/downloadContainer.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    max-width: 680px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 600px;
+    padding-top: 20px;
 }
 
 .FondoDowloadAppMobile {
-  max-width: 468px;
-  width: 90%;
-  position: relative;
-  z-index: 99;
+    max-width: 468px;
+    width: 90%;
+    position: relative;
+    z-index: 99;
 }
 .contentDownloadAppMobile {
-  position: absolute;
-  z-index: 120;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    position: absolute;
+    z-index: 120;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .titleContentDowloadMobile {
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
 
-  font-family: "Abril Fatface", cursive;
+    font-family: "Abril Fatface", cursive;
 }
 
 .ButtonDownloadApp {
-  width: 100%;
-  position: absolute;
+    width: 100%;
+    position: absolute;
 }
 .textButtonContent {
-  width: 100%;
-  position: absolute;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  font-size: 30px;
-  font-weight: bold;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: bold;
 }
 .textButtonContent p {
-  width: 100px;
+    width: 100px;
 
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
 }
 .buttonAnswer-SI {
-  color: #39b54a;
+    color: #39b54a;
 }
 .buttonAnswer-NO {
-  color: #ed3432;
+    color: #ed3432;
 }
 
 .containerButtonsDownload {
-  background-image: url("../images/DownloadAppMobile/containerButtonDownload.svg");
+    background-image: url("../images/DownloadAppMobile/containerButtonDownload.svg");
 
-  background-repeat: no-repeat;
-  background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-  height: 100px;
-  max-width: 270px;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 50px;
+    height: 100px;
+    max-width: 270px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 50px;
 }
 .containerButtonsDownload p {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  cursor: pointer;
-  margin: 0px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    margin: 0px;
 }
 
 @media (max-width: 568px) {
-  .titleContentDowloadMobile {
-    font-size: 20px;
-  }
-  .containerButtonsDownload {
-    margin-top: 40px;
-    height: 80px;
-    font-size: 35px;
-  }
+    .titleContentDowloadMobile {
+        font-size: 20px;
+    }
+    .containerButtonsDownload {
+        margin-top: 40px;
+        height: 80px;
+        font-size: 35px;
+    }
 }
 @media (max-width: 480px) {
-  .containerButtonsDownload {
-    margin-top: 10px;
-    height: 60px;
-    font-size: 25px;
-  }
+    .containerButtonsDownload {
+        margin-top: 10px;
+        height: 60px;
+        font-size: 25px;
+    }
 }

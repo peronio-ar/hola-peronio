@@ -1,154 +1,154 @@
 .readyScreen {
-  width: 100vw;
-  height: 100vh;
-  min-height: 800px;
-  overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(252, 247, 242, 1);
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(252, 247, 242, 1);
 }
 .readyScreenFondo {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 99;
-  top: 0px;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
 }
 .mobileReadyFondo {
-  display: none;
+    display: none;
 }
 @media screen and (min-width: 1600px) {
-  .readyScreenFondo {
-    width: 100%;
+    .readyScreenFondo {
+        width: 100%;
 
-    height: auto;
-  }
+        height: auto;
+    }
 }
 
 .readyScreenBarraVertical {
-  position: absolute;
-  z-index: 99;
-  width: 250px;
-  padding-left: 800px;
-  top: 70px;
+    position: absolute;
+    z-index: 99;
+    width: 250px;
+    padding-left: 800px;
+    top: 70px;
 }
 
 @media screen and (max-width: 768px) {
-  .readyScreenBarraVertical {
-    display: none;
-  }
-  .readyScreen {
-    min-height: auto;
-  }
-  .mobileReadyFondo {
-    display: block;
-  }
-  .desktopReadyFondo {
-    display: none;
-  }
+    .readyScreenBarraVertical {
+        display: none;
+    }
+    .readyScreen {
+        min-height: auto;
+    }
+    .mobileReadyFondo {
+        display: block;
+    }
+    .desktopReadyFondo {
+        display: none;
+    }
 }
 @media screen and (max-width: 968px) {
-  .mobileReadyFondo {
-    display: block;
-  }
-  .desktopReadyFondo {
-    display: none;
-  }
+    .mobileReadyFondo {
+        display: block;
+    }
+    .desktopReadyFondo {
+        display: none;
+    }
 }
 
 .finishScreenContent {
-  position: absolute;
-  z-index: 100;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
 }
 .finishContentText {
-  color: #39b54a;
-  font-size: 30px;
-  margin: 20px 0px;
-  padding-top: 120px;
-  line-height: 30px;
-  font-family: "Abril Fatface", cursive;
+    color: #39b54a;
+    font-size: 30px;
+    margin: 20px 0px;
+    padding-top: 120px;
+    line-height: 30px;
+    font-family: "Abril Fatface", cursive;
 
-  text-align: center;
+    text-align: center;
 }
 .readyScreenButton {
-  width: 300px;
-  margin: 0;
-  font-size: 10px;
+    width: 300px;
+    margin: 0;
+    font-size: 10px;
 }
 .readyScreenText {
-  position: absolute;
-  height: 80px;
-  padding: 30px 10px 0px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+    position: absolute;
+    height: 80px;
+    padding: 30px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
-  flex-direction: column;
-  color: #39b54a;
-  overflow: hidden;
-  width: 300px;
+    flex-direction: column;
+    color: #39b54a;
+    overflow: hidden;
+    width: 300px;
 }
 .readyScreenText p {
-  margin: 0;
-  text-align: center;
+    margin: 0;
+    text-align: center;
 
-  width: 100%;
-  overflow-wrap: break-word;
-  line-height: 20px;
+    width: 100%;
+    overflow-wrap: break-word;
+    line-height: 20px;
 }
 .finishScreenContentParrafo {
-  margin: 0;
-  line-height: 10px;
-  color: #1b262c;
+    margin: 0;
+    line-height: 10px;
+    color: #1b262c;
 }
 
 .readyScreenTextFinal {
-  font-size: 18px;
-  text-align: center;
-  color: black;
-  font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-family: "Roboto", sans-serif;
 }
 
 .readyScreenButton {
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #39b54a;
-  background: linear-gradient(white 80%, #9ddba6);
-  border: 2px solid #39b54a;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 90px;
-  font-weight: bold;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #39b54a;
+    background: linear-gradient(white 80%, #9ddba6);
+    border: 2px solid #39b54a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 90px;
+    font-weight: bold;
 }
 
 .readyScreenArrow {
-  width: 20px;
+    width: 20px;
 }
 .readyScreenArrowText {
-  text-align: center;
-  line-height: 20px;
-  color: #39b54a;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: #39b54a;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
 }
 @media screen and (max-width: 768px) {
-  .readyScreen {
-    min-height: auto;
-  }
-  .finishContentText {
-    padding-top: 190px;
-  }
+    .readyScreen {
+        min-height: auto;
+    }
+    .finishContentText {
+        padding-top: 190px;
+    }
 }

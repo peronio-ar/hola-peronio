@@ -1,138 +1,144 @@
 .ActiveQRBackground {
-  width: 100vw;
-  height: 100vh;
-  min-height: 800px;
-  overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00b7c2;
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b7c2;
 }
 .activeQRfondo {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 99;
-  top: 0px;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
 }
 
 @media screen and (max-width: 768px) {
-  .ActiveQRBackground {
-    min-height: auto;
-  }
+    .ActiveQRBackground {
+        min-height: auto;
+    }
 }
 
 @media screen and (min-width: 1600px) {
-  .activeQRfondo {
-    width: 100%;
+    .activeQRfondo {
+        width: 100%;
 
-    height: auto;
-  }
+        height: auto;
+    }
 }
 .createWalletBarraVertical {
-  position: absolute;
-  z-index: 99;
-  width: 13%;
-  right: 20px;
-  top: 20px;
-  width: 200px;
+    position: absolute;
+    z-index: 99;
+    width: 13%;
+    right: 20px;
+    top: 20px;
+    width: 200px;
 }
 
 @media screen and (max-width: 768px) {
-  .createWalletBarraVertical {
-    display: none;
-  }
+    .createWalletBarraVertical {
+        display: none;
+    }
 }
 
 .activeQRBarra {
-  background-image: url("../images/ActiveQR/ActiveQRBarra.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 260px;
-  padding-top: 15px;
+    background-image: url("../images/ActiveQR/ActiveQRBarra.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 260px;
+    padding-top: 15px;
 }
 
 .activeQRContenText {
-  color: #f9ed32;
-  font: 800;
-  text-align: center;
-  top: 6px;
-  font-size: 33px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
+    color: #f9ed32;
+    font: 800;
+    text-align: center;
+    top: 6px;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
 .activeQRTime {
-  position: absolute;
-  z-index: 99;
-  left: 20px;
-  top: 20px;
-  width: 140px;
-  color: red !important;
+    position: absolute;
+    z-index: 99;
+    left: 20px;
+    top: 20px;
+    width: 140px;
+    color: red !important;
 }
 .activeQRContent {
-  position: absolute;
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
 }
 
 .activeQRContentParraf {
-  color: #1b262c;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  margin-top: 0px;
-  line-height: 28px;
+    color: #1b262c;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+    line-height: 28px;
 }
+
+.activeQRContentMobile {
+    font-size: 18px;
+    font-weight: normal;
+}
+
 .ActiveQRButton {
-  cursor: pointer;
+    cursor: pointer;
 }
 .configureButton {
-  width: 40%;
+    width: 40%;
 }
 
 .contentButtonQr {
-  width: 80%;
-  margin: 0 auto;
-  height: 60px;
-  border: 2px solid #fdcc9f;
-  background: rgba(255, 246, 238, 1);
-  font-size: 25px;
-  font-weight: bold;
-  padding: 0px;
-  color: #0b4d76;
-  font-family: "Roboto", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    border: 2px solid #fdcc9f;
+    background: rgba(255, 246, 238, 1);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px;
+    color: #0b4d76;
+    font-family: "Roboto", sans-serif;
 }
 .contentButtonQrText {
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 
-  font-size: 15px;
-  font-weight: bold;
-  background-color: transparent;
-  color: white;
-  padding: 0px;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid white;
-  padding-top: 20px;
-  border-radius: 0px;
-  font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
 }
 .contentButtonQrText:active {
-  outline: none;
+    outline: none;
 }
 
 @media (max-width: 400px) {
-  .downloadIcon {
-    width: 30%;
-    border: 2px solid red;
-  }
+    .downloadIcon {
+        width: 30%;
+        border: 2px solid red;
+    }
 }

@@ -1,7 +1,7 @@
 .container-app {
-  height: 100vh;
+    height: 100vh;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* ::-webkit-scrollbar {
@@ -10,8 +10,8 @@
  */
 
 body {
-  overflow: hidden;
-  height: 100vh;
+    overflow: hidden;
+    height: 100vh;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 }

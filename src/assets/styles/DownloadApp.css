@@ -1,196 +1,196 @@
 .DownloadAppBackgorund {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00b7c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b7c2;
 }
 
 .mobileDownloadApp {
-  display: none;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .DownloadAppBackgorund {
-    min-height: auto;
-  }
+    .DownloadAppBackgorund {
+        min-height: auto;
+    }
 }
 
 @media screen and (max-width: 1080px) {
-  .DownloadAppBackgorund {
-    display: none;
-  }
-  .mobileDownloadApp {
-    display: flex;
-  }
+    .DownloadAppBackgorund {
+        display: none;
+    }
+    .mobileDownloadApp {
+        display: flex;
+    }
 }
 
 .DownloadAppFondo {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 99;
-  top: 0px;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
 }
 
 @media screen and (min-width: 1200px) {
-  .DownloadAppFondo {
-    width: 100%;
-    height: auto;
-  }
+    .DownloadAppFondo {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .downloadContainer {
-  position: absolute;
-  top: 0px;
-  z-index: 100;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
 }
 .navIconReloj {
-  height: 148px;
-  padding-right: 10px;
+    height: 148px;
+    padding-right: 10px;
 }
 .navIconLogo {
-  height: 75px;
+    height: 75px;
 }
 .DownloadContent {
-  position: relative;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  width: 250px;
+    width: 250px;
 }
 .DownloadBarcode {
-  width: 100%;
+    width: 100%;
 }
 
 .DownloadBarcodeQr {
-  width: 85%;
-  top: 30px;
-  position: absolute;
+    width: 85%;
+    top: 30px;
+    position: absolute;
 }
 
 .barcodeLine {
-  position: absolute;
-  width: 80%;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin: 0 auto;
+    position: absolute;
+    width: 80%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
 }
 
 .barcodeButton {
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  color: white;
-  width: 100%;
-  height: 60px;
-  background: linear-gradient(#00b7c2, #0b4d76);
-  border: none;
-  outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(#00b7c2, #0b4d76);
+    border: none;
+    outline: none;
 }
 .barcodeButton:active {
-  outline: none;
+    outline: none;
 }
 
 .downloadButton {
-  width: 50%;
-  cursor: pointer;
+    width: 50%;
+    cursor: pointer;
 }
 
 .contentBarra {
-  position: fixed;
-  z-index: 100;
-  bottom: 40px;
-  background-color: #ed3432;
-  height: 15px;
-  width: 90%;
-  max-width: 500px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    bottom: 40px;
+    background-color: #ed3432;
+    height: 15px;
+    width: 90%;
+    max-width: 500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
-  border-radius: 10px;
+    border-radius: 10px;
 }
 .ContentInnerBara {
-  position: absolute;
-  z-index: 110;
-  height: 15px;
-  width: 35%;
-  background-color: #1b262c;
-  border-radius: 10px;
-  transition: all 1s;
+    position: absolute;
+    z-index: 110;
+    height: 15px;
+    width: 35%;
+    background-color: #1b262c;
+    border-radius: 10px;
+    transition: all 1s;
 }
 .ContentInnerBara2 {
-  position: absolute;
-  z-index: 110;
-  height: 15px;
-  width: 60%;
-  background-color: #1b262c;
-  border-radius: 10px;
+    position: absolute;
+    z-index: 110;
+    height: 15px;
+    width: 60%;
+    background-color: #1b262c;
+    border-radius: 10px;
 }
 
 .circleOfBarra {
-  position: absolute;
-  z-index: 120;
-  height: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+    position: absolute;
+    z-index: 120;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .downloadCircleBlack {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background: #1b262c;
-  border: 2px solid #f0dd0e;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #1b262c;
+    border: 2px solid #f0dd0e;
 }
 
 .downloadCircle {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #f0dd0e;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f0dd0e;
 }
 
 .downloadText {
-  color: #fcf7f2;
-  font-size: 14px;
+    color: #fcf7f2;
+    font-size: 14px;
 
-  margin-top: 26px;
-  font-weight: bold;
+    margin-top: 26px;
+    font-weight: bold;
 }
 
 .downloadCar2 {
-  position: absolute;
-  z-index: 160;
-  bottom: -10px;
-  left: -50px;
-  width: 150px;
-  transition: all 1s;
+    position: absolute;
+    z-index: 160;
+    bottom: -10px;
+    left: -50px;
+    width: 150px;
+    transition: all 1s;
 }
 
 @media screen and (max-width: 768px) {
-  .contentBarra {
-    bottom: 60px;
-    width: 90%;
-  }
+    .contentBarra {
+        bottom: 60px;
+        width: 90%;
+    }
 }
 @media screen and (max-width: 1080px) {
-  .removeBarra {
-    display: none;
-  }
+    .removeBarra {
+        display: none;
+    }
 }

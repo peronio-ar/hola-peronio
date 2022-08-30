@@ -1,64 +1,64 @@
 .counter {
-  position: relative;
-  font-family: "Abril Fatface", cursive;
+    position: relative;
+    font-family: "Abril Fatface", cursive;
 }
 
 .counterText {
-  position: absolute;
-  width: 95%;
-  height: 95%;
-  display: flex;
-  font-size: 50px;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  /* padding-left: 5px; */
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 5px; */
 }
 
 .card {
-  position: absolute;
+    position: absolute;
 }
 
 .card .percent {
-  position: relative;
+    position: relative;
 }
 
 .card svg {
-  position: relative;
-  width: 141px;
-  height: 105px;
-  transform: rotate(-90deg);
+    position: relative;
+    width: 141px;
+    height: 105px;
+    transform: rotate(-90deg);
 }
 
 .card svg circle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: #f0f0f0;
-  stroke-width: 10;
-  stroke-linecap: round;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 10;
+    stroke-linecap: round;
 }
 
 .card svg circle:last-of-type {
-  stroke-dasharray: 360px;
+    stroke-dasharray: 360px;
 
-  stroke: #ec2929;
+    stroke: #ec2929;
 }
 
 .piechartCounter {
-  position: absolute;
-  bottom: 0px;
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  bottom: 8px;
-  right: 2px;
-  display: block;
-  width: 105px;
-  height: 105px;
-  border-radius: 50%;
-  background-image: conic-gradient(#ec2929 270deg, transparent 0);
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    bottom: 8px;
+    right: 2px;
+    display: block;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-image: conic-gradient(#ec2929 270deg, transparent 0);
 }
 .pieGold {
-  right: 8px;
+    right: 8px;
 }
