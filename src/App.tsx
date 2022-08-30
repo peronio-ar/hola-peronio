@@ -17,6 +17,7 @@ import { publicProvider } from "wagmi/providers/public";
 import Wizzard from "./components/Wizzard";
 import { scroller, Element } from "react-scroll";
 const { chains, provider } = configureChains([chain.polygon], [publicProvider()]);
+const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
 const { connectors } = getDefaultWallets({
     appName: "Peronio App",
@@ -127,7 +128,7 @@ function App() {
 
                     {disableScreen < 4 && <CreateWallet counter={counter} handleClickNext={handleClickNext} />}
 
-                    {disableScreen < 5 && <ActiveQR step={step} counter={counter} handleClickNext={handleClickNext} />}
+                    {disableScreen < 5 && <ActiveQR isMobile={isMobile} step={step} counter={counter} handleClickNext={handleClickNext} />}
 
                     {disableScreen < 6 && <FinishWallet counter={counter} handleClickNext={handleClickNext} />}
 

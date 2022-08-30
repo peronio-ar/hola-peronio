@@ -7,7 +7,7 @@ import Counter from "./Counter";
 import { useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
-export default function Configure({ step, handleClickNext, counter }: any) {
+export default function Configure({ isMobile, step, handleClickNext, counter }: any) {
     const [activeButton, setActiveButton] = useState(false);
     return (
         <Element name="activeQr" className="ActiveQRBackground">
@@ -27,7 +27,18 @@ export default function Configure({ step, handleClickNext, counter }: any) {
                 </div>
 
                 <p className="activeQRContentParraf">
-                    Activá el escaner de QR y <br /> hacé click en Conectar
+                    {isMobile ? (
+                        <ul className="activeQRContentMobile">
+                            <li>Hacé click en Conectar</li>
+                            <li>Elegí Wallet Connect</li>
+                            <li>Seleccioná AlphaWallet como Billetera</li>
+                            <li>Volvé acá</li>
+                        </ul>
+                    ) : (
+                        <span>
+                            Activá el escaner de QR y <br /> hacé click en Conectar
+                        </span>
+                    )}
                 </p>
 
                 <ConnectButton.Custom>
