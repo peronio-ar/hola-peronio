@@ -11,7 +11,7 @@ import MobileWelcome from "./components/MobileWelcome";
 import DownloadAppMobile from "./components/DownloadAppMobile";
 import "@rainbow-me/rainbowkit/styles.css";
 
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { connectorsForWallets, getDefaultWallets, wallet, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 import Wizzard from "./components/Wizzard";
@@ -19,13 +19,24 @@ import { scroller, Element } from "react-scroll";
 const { chains, provider } = configureChains([chain.polygon], [publicProvider()]);
 const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
-const { connectors } = getDefaultWallets({
-    appName: "Peronio App",
-    chains,
-});
+// const { connectors } = getDefaultWallets({
+//     appName: "Peronio App",
+//     chains,
+// });
+
+const connectors = connectorsForWallets([
+    {
+        groupName: "Default",
+        wallets: [
+            // wallet.rainbow({ chains }),
+            wallet.walletConnect({ chains }),
+            wallet.metaMask(chains),
+        ],
+    },
+]);
 
 const wagmiClient = createClient({
-    autoConnect: true,
+    autoConnect: false,
     connectors,
     provider,
 });
