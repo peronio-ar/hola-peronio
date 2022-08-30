@@ -30,7 +30,7 @@ const connectors = connectorsForWallets([
         wallets: [
             // wallet.rainbow({ chains }),
             wallet.walletConnect({ chains }),
-            wallet.metaMask(chains),
+            wallet.metaMask({ chains }),
         ],
     },
 ]);
