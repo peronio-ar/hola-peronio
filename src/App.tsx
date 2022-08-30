@@ -110,7 +110,7 @@ function App() {
 
     return (
         <WagmiConfig client={wagmiClient}>
-            <RainbowKitProvider chains={chains}>
+            <RainbowKitProvider modalSize="compact" chains={chains}>
                 <div className="container-app">
                     {disableScreen < 2 && (
                         <>
