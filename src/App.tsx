@@ -129,7 +129,7 @@ function App() {
             <RainbowKitProvider modalSize="compact" chains={chains}>
                 <div className="container-app">
                     {disableScreen < 2 &&
-                        (window.ethereum ? (
+                        (window.ethereum && isMobile ? (
                             <InjectedWelcome connector={metamaskConnector} />
                         ) : (
                             <>
