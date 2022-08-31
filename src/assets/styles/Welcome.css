@@ -236,3 +236,13 @@
     width: 140px;
     cursor: pointer;
 }
+
+.injectedWelcomeDiv {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.injectedWelcomeDiv button {
+    width: 200px;
+}

@@ -11,11 +11,14 @@ import MobileWelcome from "./components/MobileWelcome";
 import DownloadAppMobile from "./components/DownloadAppMobile";
 import "@rainbow-me/rainbowkit/styles.css";
 
+import { MetaMaskConnector } from "wagmi/connectors/metaMask";
+
 import { connectorsForWallets, getDefaultWallets, wallet, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 import Wizzard from "./components/Wizzard";
 import { scroller, Element } from "react-scroll";
+import InjectedWelcome from "./components/InjectedWelcome";
 const { chains, provider } = configureChains([chain.polygon], [publicProvider()]);
 const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
@@ -23,6 +26,8 @@ const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 //     appName: "Peronio App",
 //     chains,
 // });
+
+const metamaskConnector = new MetaMaskConnector({ chains });
 
 const connectors = connectorsForWallets([
     {
@@ -123,12 +128,15 @@ function App() {
         <WagmiConfig client={wagmiClient}>
             <RainbowKitProvider modalSize="compact" chains={chains}>
                 <div className="container-app">
-                    {disableScreen < 2 && (
-                        <>
-                            <Welcome setIsApple={setIsApple} handleClickNext={handleClickNext} />
-                            <MobileWelcome handleClickNext={handleClickNext} />
-                        </>
-                    )}
+                    {disableScreen < 2 &&
+                        (window.ethereum ? (
+                            <InjectedWelcome connector={metamaskConnector} />
+                        ) : (
+                            <>
+                                <Welcome setIsApple={setIsApple} handleClickNext={handleClickNext} />
+                                <MobileWelcome handleClickNext={handleClickNext} />
+                            </>
+                        ))}
 
                     {disableScreen < 3 && (
                         <>
