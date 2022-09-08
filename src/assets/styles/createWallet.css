@@ -45,6 +45,19 @@
     padding-top: 30px;
 }
 
+.playerDiv {
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -14%;
+}
+
+.playerDiv > div {
+    width: 590px;
+    height: 425px;
+}
+
 .ContainerButtons {
     position: relative;
     z-index: 1000;

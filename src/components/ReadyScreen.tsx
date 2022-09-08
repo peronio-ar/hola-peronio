@@ -2,6 +2,11 @@ import React from "react";
 import readyScreenFondo from "../assets/images/ReadyScreen/readyScreenFondo2.svg";
 import readyScreenFondo3 from "../assets/images/ReadyScreen/readyScreenFondo3.svg";
 import readyScreenBarraVertical from "../assets/images/Captures/Capture3Screen6.svg";
+
+import capture3Video from "../assets/images/Captures/alphawallet-tutorial3.mp4";
+
+import ReactPlayer from "react-player";
+
 import readyScreenArrow from "../assets/images/ReadyScreen/readyScreenArrow.svg";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
@@ -12,7 +17,11 @@ export default function ReadyScreen() {
             <img src={LogoPeronio} alt="createLogoPeronio" className="createLogoPeronio" />
             <img src={readyScreenFondo} alt="readyScreenFondo" className="readyScreenFondo desktopReadyFondo" />
             <img src={readyScreenFondo3} alt="readyScreenFondo" className="readyScreenFondo mobileReadyFondo" />
-            <img src={readyScreenBarraVertical} alt="readyScreenBarraVertical" className="readyScreenBarraVertical" />
+            {/* <img src={readyScreenBarraVertical} alt="readyScreenBarraVertical" className="readyScreenBarraVertical" /> */}
+            <div className="playerDiv">
+                <ReactPlayer width="590" height="425" muted={true} playing={true} loop={true} url={capture3Video} />
+            </div>
+
             <div className="finishScreenContent">
                 <p className="finishContentText">¡Todo listo, Compañero!</p>
 

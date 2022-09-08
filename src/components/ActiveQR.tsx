@@ -1,23 +1,35 @@
+import ReactPlayer from "react-player";
+
+import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
 import activeQRfondo from "../assets/images/ActiveQR/ActiveQRFondo2.svg";
-import capture2 from "../assets/images/Captures/capture2.gif";
+import capture2Video from "../assets/images/Captures/alphawallet-tutorial2.mp4";
+import capture2BisVideo from "../assets/images/Captures/alphawallet-tutorial2-bis.mp4";
+import walletConnectIcon from "../assets/images/wallet-connect.png";
+import Counter from "./Counter";
+
 import { useState } from "react";
 import { Element } from "react-scroll";
-import LogoPeronio from "../assets/images/CreateWallet/LogoPeronio.svg";
-import Counter from "./Counter";
 import { useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
-import walletConnectIcon from "../assets/images/wallet-connect.png";
-
 export default function Configure({ isMobile, step, handleClickNext, counter }: any) {
     const [activeButton, setActiveButton] = useState(false);
+    const [playVideo, setPlayVideo] = useState(false);
+
+    useEffect(() => {
+        setPlayVideo(true);
+    }, []);
+    const [captureVideoUrl, setCaptureVideoUrl] = useState(capture2Video);
+
     return (
         <Element name="activeQr" className="ActiveQRBackground">
             <img src={activeQRfondo} alt="activeQRfondo" className="activeQRfondo" />
 
             <img src={LogoPeronio} alt="createLogoPeronio" className="createLogoPeronio" />
 
-            <img src={capture2} alt="createWalletBarraVertical" className="createWalletBarraVertical" />
+            <div className="playerDiv">
+                <ReactPlayer width="590" height="425" muted={true} playing={playVideo} loop={true} url={captureVideoUrl} />
+            </div>
 
             <div className="activeQRTime">
                 <Counter activeBlack counterNumber={counter} />
@@ -38,19 +50,24 @@ export default function Configure({ isMobile, step, handleClickNext, counter }: 
                     ) : (
                         <span>
                             Activá el escaner de QR y <br /> hacé click en Conectar
-                            <div className="walletConnectIcon">
+                            <span className="walletConnectIcon">
                                 <img src={walletConnectIcon} />
-                                <div>Wallet connect</div>
-                            </div>
+                                <span>Wallet connect</span>
+                            </span>
                         </span>
                     )}
                 </p>
 
                 <ConnectButton.Custom>
-                    {({ openConnectModal, account, openAccountModal }) => {
+                    {({ openConnectModal, account, openAccountModal, connectModalOpen }) => {
                         useEffect(() => {
                             if (account && step === 4 && activeButton) handleClickNext();
                         }, [account]);
+
+                        useEffect(() => {
+                            setCaptureVideoUrl(connectModalOpen ? capture2BisVideo : capture2Video);
+                        }, [connectModalOpen]);
+
                         return (
                             <>
                                 {account ? (
@@ -66,7 +83,6 @@ export default function Configure({ isMobile, step, handleClickNext, counter }: 
                                     <button
                                         onClick={() => {
                                             openConnectModal();
-                                            setActiveButton(true);
                                         }}
                                         className="contentButtonQr"
                                     >
