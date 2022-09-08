@@ -57,9 +57,8 @@ export default function InjectedWelcome({ connector }: any) {
     };
 
     return (
-        <Element name="welcome" className="welcomeBackground">
+        <Element name="welcome" className="injectedBackground">
             <img src={backgroundWelcome} alt="backgroundWelcome" className="backgroundImage" />
-
             <div className="containerTitle-logo">
                 <p className="welcome">Hola</p>
                 <img src={logoPeronio} alt="logoPeronio" className="logoPeronio" />

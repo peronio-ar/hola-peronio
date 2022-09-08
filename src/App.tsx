@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
 import DownloadApp from "./components/DownloadApp";
@@ -11,7 +10,7 @@ import MobileWelcome from "./components/MobileWelcome";
 import DownloadAppMobile from "./components/DownloadAppMobile";
 import "@rainbow-me/rainbowkit/styles.css";
 
-import { MetaMaskConnector } from "wagmi/connectors/metaMask";
+import { InjectedConnector } from "wagmi/connectors/injected";
 
 import { connectorsForWallets, getDefaultWallets, wallet, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
@@ -20,14 +19,9 @@ import Wizzard from "./components/Wizzard";
 import { scroller, Element } from "react-scroll";
 import InjectedWelcome from "./components/InjectedWelcome";
 const { chains, provider } = configureChains([chain.polygon], [publicProvider()]);
-const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+const isMobile = Array.isArray(navigator.userAgent.toLowerCase().match(/mobile/i));
 
-// const { connectors } = getDefaultWallets({
-//     appName: "Peronio App",
-//     chains,
-// });
-
-const metamaskConnector = new MetaMaskConnector({ chains });
+const injectedConnector = new InjectedConnector({ chains });
 
 const connectors = connectorsForWallets([
     {
@@ -130,7 +124,9 @@ function App() {
                 <div className="container-app">
                     {disableScreen < 2 &&
                         (window.ethereum && isMobile ? (
-                            <InjectedWelcome connector={metamaskConnector} />
+                            <>
+                                <InjectedWelcome connector={injectedConnector} />
+                            </>
                         ) : (
                             <>
                                 <Welcome setIsApple={setIsApple} handleClickNext={handleClickNext} />
