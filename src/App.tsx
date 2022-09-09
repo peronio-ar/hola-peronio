@@ -19,8 +19,7 @@ import Wizzard from "./components/Wizzard";
 import { scroller, Element } from "react-scroll";
 import InjectedWelcome from "./components/InjectedWelcome";
 const { chains, provider } = configureChains([chain.polygon], [publicProvider()]);
-// const isMobile = Array.isArray(navigator.userAgent.toLowerCase().match(/mobile/i));
-const isMobile = true;
+const isMobile = Array.isArray(navigator.userAgent.toLowerCase().match(/mobile/i));
 
 const injectedConnector = new InjectedConnector({ chains });
 
