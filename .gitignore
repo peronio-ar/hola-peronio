@@ -28,3 +28,6 @@ dist-ssr
 
 # Local Next folder
 .next
+
+# tsconfig build info
+tsconfig.tsbuildinfo
