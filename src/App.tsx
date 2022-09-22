@@ -12,12 +12,13 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 import { InjectedConnector } from "wagmi/connectors/injected";
 
-import { connectorsForWallets, getDefaultWallets, wallet, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { connectorsForWallets, wallet, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 import Wizzard from "./components/Wizzard";
-import { scroller, Element } from "react-scroll";
+import { scroller } from "react-scroll";
 import InjectedWelcome from "./components/InjectedWelcome";
+
 const { chains, provider } = configureChains([chain.polygon], [publicProvider()]);
 const isMobile = Array.isArray(navigator.userAgent.toLowerCase().match(/mobile/i));
 
