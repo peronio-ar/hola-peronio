@@ -27,7 +27,7 @@ export default function InjectedWelcome({ connector }: any) {
             params: {
                 type: "ERC20", // Initially only supports ERC20, but eventually more!
                 options: {
-                    address: "0xc2768beF7a6BB57F0FfA169a9ED4017c09696FF1", // The address that the token is at.
+                    address: "0x78a486306D15E7111cca541F2f1307a1cFCaF5C4", // The address that the token is at.
                     symbol: "P", // A ticker symbol or shorthand, up to 5 chars.
                     decimals: 6, // The number of decimals in the token
                     image: "https://raw.githubusercontent.com/peronio-ar/branding/main/logo/v2/256.png", // A string url of the token logo
